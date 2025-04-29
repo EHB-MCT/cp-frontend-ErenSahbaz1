@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@layer base {
+	body {
+		background: white;
+	}
+}
+
+@layer components {
+	.wrapper {
+		@apply h-[100vh] m-auto bg-white justify-center max-w-[90%];
+	}
+	.button-primary {
+		@apply ml-9 text-white bg-[#E51131] p-4 rounded-xl;
+	}
+	.search {
+		@apply bg-[#EBF5EC] pl-2.5 pr-16 py-1 rounded-lg  max-w-3xl outline-black outline-1 ml-7;
+
+		& div {
+			@apply relative flex items-center;
+		}
+
+		& img {
+			@apply absolute left-2 h-5 w-5;
+		}
+
+		& input {
+			@apply bg-transparent py-2 sm:pr-10 pl-5 text-sm text-black placeholder-black outline-none;
+		}
+	}
+}

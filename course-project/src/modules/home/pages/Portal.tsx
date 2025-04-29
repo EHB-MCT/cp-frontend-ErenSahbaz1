@@ -9,7 +9,7 @@ const Portal = () => {
 		i18n.changeLanguage(language);
 	}
 	return (
-		<div>
+		<div className="wrapper">
 			<Navigation />
 			<Trans>{markers.intro}</Trans>
 			<button
