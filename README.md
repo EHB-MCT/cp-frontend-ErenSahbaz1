@@ -1,2 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/OwWY7ss_)
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19368164)
+
+//documentation
+[![Tanstack-Query]used to fetch the data from /shared/mock/courseProjects.json Used in the data.service.ts fetchData.ts useCourseProjectsQuery.ts also in the card, filter and portal component. (https://tanstack.com/query/latest) also from the pdf files from dual learning @StudioHyperdrive]
+[![React-i18next] used to make translations used in /core/i18n (https://react.i18next.com/) & StudioHyperdrive]

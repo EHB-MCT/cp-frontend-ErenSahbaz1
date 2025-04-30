@@ -4,12 +4,16 @@ import { initReactI18next } from "react-i18next";
 const resources = {
 	en: {
 		translation: {
-			intro: "Hello, Don't forget to Recycle!",
+			search: "Search by Websites",
+			explore: "Explore",
+			tale: "My Fairy Tale",
 		},
 	},
 	nl: {
 		translation: {
-			intro: "Hallo, vergeet niet te recyclen!",
+			search: "Zoek Websites",
+			explore: "Ontdek",
+			tale: "Mijn Sprookje",
 		},
 	},
 };

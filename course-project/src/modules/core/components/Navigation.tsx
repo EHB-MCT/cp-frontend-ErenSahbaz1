@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Search } from "~/core/components/Search";
+import { markers } from "../i18n/markers";
+import { t } from "i18next";
 export const Navigation = () => {
 	const [searchTerm, setSearchTerm] = useState("");
 	return (
@@ -9,9 +11,9 @@ export const Navigation = () => {
 				<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			</div>
 			<div className="text-sm">
-				<a href="">Explore</a>
+				<a href="">{t(markers.explore)}</a>
 				<a href="" className="button-primary">
-					My Fairy Tale
+					{t(markers.tale)}
 				</a>
 			</div>
 		</div>

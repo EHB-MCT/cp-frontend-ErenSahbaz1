@@ -1,3 +1,5 @@
 export const markers = {
-	intro: "intro",
+	search: "search",
+	explore: "explore",
+	tale: "tale",
 };

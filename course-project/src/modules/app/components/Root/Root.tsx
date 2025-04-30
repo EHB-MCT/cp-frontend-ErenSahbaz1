@@ -1,5 +1,9 @@
 import { App } from "../App";
 
-export const Root = () => {
-	return <App />;
-};
+const queryClient = new QueryClient();
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+export const Root = () => (
+	<QueryClientProvider client={queryClient}>
+		<App />
+	</QueryClientProvider>
+);
