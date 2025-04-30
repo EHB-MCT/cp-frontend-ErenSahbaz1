@@ -7,6 +7,12 @@ const resources = {
 			search: "Search by Websites",
 			explore: "Explore",
 			tale: "My Fairy Tale",
+			all: "All",
+			genreLabel: "Genre", // Add this key
+			genre: {
+				adventure: "Adventure",
+				animal: "Animal",
+			},
 		},
 	},
 	nl: {
@@ -14,6 +20,12 @@ const resources = {
 			search: "Zoek Websites",
 			explore: "Ontdek",
 			tale: "Mijn Sprookje",
+			all: "Alles",
+			genreLabel: "Genre", // Add this key
+			genre: {
+				adventure: "Avontuur",
+				animal: "Dier",
+			},
 		},
 	},
 };

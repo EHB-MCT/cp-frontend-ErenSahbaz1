@@ -3,3 +3,7 @@
 //documentation
 [![Tanstack-Query]used to fetch the data from /shared/mock/courseProjects.json Used in the data.service.ts fetchData.ts useCourseProjectsQuery.ts also in the card, filter and portal component. (https://tanstack.com/query/latest) also from the pdf files from dual learning @StudioHyperdrive]
 [![React-i18next] used to make translations used in /core/i18n (https://react.i18next.com/) & StudioHyperdrive]
+[![Tailwindcss] used for styling eveywhere in the app (https://tailwindcss.com/docs/installation/using-vite)(https://youtu.be/6biMWgD6_JY?si=ukKbmkEHyQYDwiwx)]
+
+[![React-icons] For search bar (https://react-icons.github.io/react-icons/)]
+[![MaterialUI] For dropdown in filter component (https://mui.com/material-ui/react-select/)]
