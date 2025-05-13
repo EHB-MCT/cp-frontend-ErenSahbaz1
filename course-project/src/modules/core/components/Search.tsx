@@ -1,6 +1,5 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import { markers } from "../i18n/markers";
 import { t } from "i18next";
 
 interface SearchProps {
@@ -16,10 +15,9 @@ export const Search: React.FC<SearchProps> = ({
 		<div className="search">
 			<div>
 				<FaSearch />
-
 				<input
 					type="text"
-					placeholder={t(markers.search)}
+					placeholder={t("search")}
 					value={searchTerm}
 					onChange={(e) => setSearchTerm(e.target.value)}
 				/>

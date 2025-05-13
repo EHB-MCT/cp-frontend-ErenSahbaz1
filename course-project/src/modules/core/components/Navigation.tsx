@@ -1,9 +1,37 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { Search } from "~/core/components/Search";
 import { markers } from "../i18n/markers";
 import { t } from "i18next";
-export const Navigation = () => {
+import { Link } from "react-router";
+
+interface CourseProject {
+	fable_title: string;
+	genre: string;
+}
+
+interface NavigationProps {
+	courseProjects: CourseProject[];
+	setFilteredProjects: (projects: CourseProject[]) => void;
+}
+
+export const Navigation: React.FC<NavigationProps> = ({
+	courseProjects,
+	setFilteredProjects,
+}) => {
 	const [searchTerm, setSearchTerm] = useState("");
+
+	useEffect(() => {
+		let filtered = courseProjects;
+
+		if (searchTerm) {
+			filtered = filtered.filter((project) =>
+				project.fable_title.toLowerCase().includes(searchTerm.toLowerCase())
+			);
+		}
+
+		setFilteredProjects(filtered);
+	}, [searchTerm, courseProjects, setFilteredProjects]);
+
 	return (
 		<div className="flex items-center justify-between pt-6">
 			<div className="flex items-center">
@@ -11,10 +39,10 @@ export const Navigation = () => {
 				<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			</div>
 			<div className="text-sm">
-				<a href="">{t(markers.explore)}</a>
-				<a href="" className="button-primary">
+				<Link to="/">{t(markers.explore)}</Link>
+				<Link to="/parallax" className="button-primary">
 					{t(markers.tale)}
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

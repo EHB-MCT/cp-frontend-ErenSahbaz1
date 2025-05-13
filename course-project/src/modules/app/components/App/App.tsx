@@ -1,5 +1,10 @@
-import Portal from "~/home/pages/Portal";
+import { FC } from "react";
+import { Outlet } from "react-router";
 
-export const App = () => {
-	return <Portal />;
+export const App: FC = () => {
+	return (
+		<>
+			<Outlet />
+		</>
+	);
 };

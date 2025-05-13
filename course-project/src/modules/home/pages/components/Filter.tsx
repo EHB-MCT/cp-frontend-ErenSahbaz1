@@ -18,12 +18,10 @@ export const Filter: React.FC<FilterProps> = ({
 	selectedGenre,
 	setSelectedGenre,
 }) => {
-	// Extract unique genres from the JSON data
 	const genres = Array.from(
 		new Set(courseProjects.map((project) => project.genre))
 	);
 
-	// Handle genre change
 	const handleChange = (event: SelectChangeEvent<string>) => {
 		setSelectedGenre(event.target.value);
 	};
@@ -31,7 +29,6 @@ export const Filter: React.FC<FilterProps> = ({
 	return (
 		<div className="my-10 bg-[#EBF5EC] flex items-center justify-center rounded-xl">
 			<FormControl className="w-[100px] bg-white" sx={{ marginY: "10px" }}>
-				{/* Use the correct key for the InputLabel */}
 				<InputLabel id="genre-select-label">{t("genreLabel")}</InputLabel>
 				<Select
 					labelId="genre-select-label"
@@ -40,10 +37,8 @@ export const Filter: React.FC<FilterProps> = ({
 					label={t("genreLabel")}
 					onChange={handleChange}
 				>
-					{/* "All" option */}
 					<MenuItem value="">{t("all")}</MenuItem>
 
-					{/* Genre options */}
 					{genres.map((genre) => (
 						<MenuItem key={genre} value={genre}>
 							{t(`genre.${genre.toLowerCase()}`)}

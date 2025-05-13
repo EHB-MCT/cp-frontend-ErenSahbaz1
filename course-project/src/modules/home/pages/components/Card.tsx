@@ -9,14 +9,14 @@ interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = ({ data }) => {
-	// Handle empty state
+	
 	if (!data.length) return <div>No projects found.</div>;
 
 	return (
 		<div className="flex flex-wrap gap-4 justify-evenly pb-15">
 			{data.map((project) => (
 				<div key={project.id} className="card w-[30%]">
-					<div className="">
+					<div>
 						<img
 							className="w-full rounded-2xl"
 							src={project.cover}
