@@ -35,7 +35,6 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 - **Scroll-Based Animation:** Story scenes reveal and animate as you scroll.
 - **Fixed Main Character:** Keloglan stays centered while the background and story evolve.
 - **Interactive Fight Scene:** The giantess fight features audio effects and scene transitions.
-- **Text Bubbles:** Dialogue and narration appear as you move through the scenes.
 - **Easter Egg Ideas:** Inspired by other parallax examples, with plans to add collectibles and secret interactions.
 
 🎧 Sound FX:
@@ -68,22 +67,6 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 ├── App.jsx              → Routing setup
 └── App.css              → Global styling
 ```
-
----
-
-## 💡 Challenges & Successes
-
-✅ **Successes**
-
-- Parallax story crafted without external animation libraries.
-- Strong story flow with visual pacing and interactive layers.
-- Modular code for easy scaling and maintenance.
-
-❌ **Challenges**
-
-- Keeping Keloglan fixed while ensuring responsive scroll behavior.
-- Balancing performance with complex animations.
-- Integrating all components within a shared portal structure.
 
 ---
 
