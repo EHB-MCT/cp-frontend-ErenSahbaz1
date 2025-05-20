@@ -104,3 +104,5 @@ This project is for educational and non-commercial use. All visuals are either c
 
 [![React-icons] For search bar (https://react-icons.github.io/react-icons/)]
 [![MaterialUI] For dropdown in filter component (https://mui.com/material-ui/react-select/)]
+
+https://examples.motion.dev/react/split-text-wavy for wavyTitle component

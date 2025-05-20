@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router";
-
 import { IoReturnUpBack } from "react-icons/io5";
-
+import WavyTitle from "./components/WavyTitle";
 import courseProjects from "~/shared/mock/courseProjects.json";
 
 const MakingOf = () => {
@@ -29,28 +28,28 @@ const MakingOf = () => {
 			<div className="wrapper">
 				<IoReturnUpBack
 					onClick={() => navigate("/")}
-					className="cursor-pointer size-10 mt"
+					className="cursor-pointer size-10 mt-8"
 				/>
 
 				{/* Date + Title + Author */}
-				<div className="max-w-5xl mx-auto py-10 px-4">
+				<div className="">
 					<div className="text-center mb-10">
 						<p className="text-xs text-gray-500">Posted – 6 may 2025</p>
-						<h1 className="text-[10vw] md:text-[12vw] lg:text-[14vw] font-medium mt-2 text-center flex justify-center break-words">
-							{project.fable_title}
-						</h1>
+						<WavyTitle>{project.fable_title}</WavyTitle>
 						<p className="mt-1 font-medium">
 							{project.name} {project.surname}
 						</p>
 					</div>
 
 					{/* Banner Image in black container */}
-					<div className="bg-black rounded-lg p-4">
-						<img
-							src={project.banner}
-							alt={project.fable_title}
-							className="w-full rounded-lg max-w-[600px] object-contain mx-auto "
-						/>
+					<div className="bg-black rounded-xl p-7 flex justify-center items-center h-[700px]">
+						<div className="w-full h-full overflow-hidden rounded-lg">
+							<img
+								src={project.banner}
+								alt={project.fable_title}
+								className="w-full h-full object-cover"
+							/>
+						</div>
 					</div>
 
 					{/* Description */}
@@ -72,7 +71,7 @@ const MakingOf = () => {
 									<img
 										src={project.extra_image1}
 										alt="Process 1"
-										className="w-full h-52 object-cover"
+										className="w-full h-[400px] object-cover"
 									/>
 								</div>
 							)}
@@ -81,7 +80,7 @@ const MakingOf = () => {
 									<img
 										src={project.extra_image2}
 										alt="Process 2"
-										className="w-full h-52 object-cover"
+										className="w-full h-[400px] object-cover"
 									/>
 								</div>
 							)}
@@ -90,7 +89,7 @@ const MakingOf = () => {
 									<img
 										src={project.extra_image3}
 										alt="Process 3"
-										className="w-full h-52 object-cover"
+										className="w-full h-[400px] object-cover"
 									/>
 								</div>
 							)}
@@ -98,6 +97,14 @@ const MakingOf = () => {
 					</div>
 				</div>
 			</div>
+			<a
+				href="https://example.com"
+				target="_blank"
+				rel="noopener noreferrer"
+				className="fixed bottom-6 cursor-pointer left-1/2 -translate-x-1/2 z-50 bg-zinc-800 text-white px-8 py-3 rounded-xl shadow-lg text-base font-semibold hover:bg-zinc-700 transition"
+			>
+				Visit Site
+			</a>
 		</>
 	);
 };

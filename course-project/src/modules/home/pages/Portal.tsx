@@ -37,8 +37,11 @@ const Portal = () => {
 		setFilteredProjects(filtered);
 	}, [selectedGenre]);
 
+	const [activeLang, setActiveLang] = useState(i18n.language);
+
 	function setLanguage(language: string) {
 		i18n.changeLanguage(language);
+		setActiveLang(language);
 	}
 
 	return (
@@ -48,18 +51,38 @@ const Portal = () => {
 				setFilteredProjects={setFilteredProjects}
 			/>
 
-			<button
-				onClick={() => setLanguage("en")}
-				className="bg-emerald-500 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold"
-			>
-				English
-			</button>
-			<button
-				onClick={() => setLanguage("nl")}
-				className="bg-emerald-500 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold ml-2"
-			>
-				Nederlands
-			</button>
+			<div className="flex gap-2 my-4">
+				<button
+					onClick={() => setLanguage("en")}
+					className={`flex items-center gap-2 rounded-full py-2 px-5 text-xs font-semibold shadow-sm transition
+            ${
+							activeLang === "en"
+								? "bg-zinc-800 text-white"
+								: "bg-zinc-100 text-zinc-800 hover:bg-zinc-200"
+						}`}
+					aria-pressed={activeLang === "en"}
+				>
+					<span role="img" aria-label="English">
+						🇬🇧
+					</span>{" "}
+					English
+				</button>
+				<button
+					onClick={() => setLanguage("nl")}
+					className={`flex items-center gap-2 rounded-full py-2 px-5 text-xs font-semibold shadow-sm transition
+            ${
+							activeLang === "nl"
+								? "bg-zinc-800 text-white"
+								: "bg-zinc-100 text-zinc-800 hover:bg-zinc-200"
+						}`}
+					aria-pressed={activeLang === "nl"}
+				>
+					<span role="img" aria-label="Nederlands">
+						🇳🇱
+					</span>{" "}
+					Nederlands
+				</button>
+			</div>
 
 			<Filter
 				selectedGenre={selectedGenre}
