@@ -8,7 +8,7 @@ const resources = {
 			explore: "Explore",
 			tale: "My Fairy Tale",
 			all: "All",
-			genreLabel: "Genre", // Add this key
+			genreLabel: "Genre",
 			genre: {
 				adventure: "Adventure",
 				animal: "Animal",
@@ -21,7 +21,7 @@ const resources = {
 			explore: "Ontdek",
 			tale: "Mijn Sprookje",
 			all: "Alles",
-			genreLabel: "Genre", // Add this key
+			genreLabel: "Genre",
 			genre: {
 				adventure: "Avontuur",
 				animal: "Dier",

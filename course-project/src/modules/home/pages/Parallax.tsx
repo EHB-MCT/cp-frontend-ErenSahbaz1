@@ -1,26 +1,28 @@
-import { useState } from "react";
-import { Navigation } from "~/core/components/Navigation";
-import courseProjectsMock from "~/shared/mock/courseProjects.json";
-import {
-	MouseParallaxContainer,
-	MouseParallaxChild,
-} from "react-parallax-mouse";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Environment } from "@react-three/drei";
+import KeloText from "./components/KeloText";
 
 export const Parallax = () => {
-	const [filteredProjects, setFilteredProjects] = useState(courseProjectsMock);
-
 	return (
-		<div className="wrapper">
-			<Navigation
-				courseProjects={courseProjectsMock}
-				setFilteredProjects={setFilteredProjects}
+		<div className="relative w-screen h-screen overflow-hidden">
+			{/* Background Image */}
+			<img
+				src="/scene1.png"
+				alt="background"
+				className="absolute inset-0 w-full h-full object-cover z-0"
 			/>
 
-			<MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-				<MouseParallaxChild factorX={0.3} factorY={0.5}>
-					<h1>Hello world</h1>
-				</MouseParallaxChild>
-			</MouseParallaxContainer>
+			{/* 3D Canvas */}
+			<Canvas
+				className="absolute inset-0 z-10"
+				camera={{ position: [0, 0, 10], fov: 50 }}
+			>
+				<ambientLight intensity={0.5} />
+				<directionalLight position={[10, 10, 5]} intensity={1} />
+				<KeloText />
+				<OrbitControls enableZoom={false} enablePan={false} />
+				<Environment preset="sunset" />
+			</Canvas>
 		</div>
 	);
 };
