@@ -1,4 +1,4 @@
-# 🌱 Keloglan — Interactive Parallax Fairy Tale Website
+# Keloglan — Interactive Parallax Fairy Tale Website
 
 This project is an interactive, scroll-based fairy tale website based on the Turkish folk story of _Keloglan_ — the "bald boy" — a brave young man who takes on a giantess to become a hero. Created as part of a school assignment, this immersive website translates a traditional tale into a modern web experience, packed with animated storytelling, parallax effects, and visual richness.
 
@@ -6,13 +6,13 @@ This project is an interactive, scroll-based fairy tale website based on the Tur
 
 ---
 
-## 📖 Concept & Inspiration
+## Concept & Inspiration
 
 The goal of this project was to create an interactive digital story using a parallax scroll format. Inspired by sites like [Every Last Drop](http://everylastdrop.co.uk/), [KPRVerse](https://kprverse.com/), and [Active Theory’s Paper Planes](https://activetheory.net/work/paper-planes), this site aims to deliver both aesthetic appeal and engaging storytelling through layered animation, interactive features, and scroll-based pacing.
 
 ---
 
-## 🎨 Design & Structure
+## Design & Structure
 
 The story unfolds as the user scrolls vertically through the journey of Keloglan:
 
@@ -21,7 +21,7 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 - **The Giantess:** A dynamic and intense climax where he faces the giantess.
 - **Triumphant Return:** Keloglan returns home as a celebrated hero.
 
-🖼 Key Visual Techniques:
+Key Visual Techniques:
 
 - Layered parallax movement (e.g. trees, mountains, clouds).
 - Background transitions to reflect narrative progression.
@@ -30,14 +30,14 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 
 ---
 
-## 🧠 Features & Interactivity
+## Features & Interactivity
 
 - **Scroll-Based Animation:** Story scenes reveal and animate as you scroll.
 - **Fixed Main Character:** Keloglan stays centered while the background and story evolve.
 - **Interactive Fight Scene:** The giantess fight features audio effects and scene transitions.
 - **Easter Egg Ideas:** Inspired by other parallax examples, with plans to add collectibles and secret interactions.
 
-🎧 Sound FX:
+Sound FX:
 
 - [Wind SFX](https://pixabay.com/sound-effects/winds-sound-effects-304060/) for ambiance.
 - [Sword Fight](https://pixabay.com/sound-effects/sword-sound-260274/) for the battle.
@@ -45,7 +45,7 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 
 ---
 
-## ⚙️ Technology Stack
+## Technology Stack
 
 - **React (Vite)** – Fast build & dev environment.
 - **TailwindCSS** – Styling and layout.
@@ -56,7 +56,7 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 
 ---
 
-## 🛠 Project Structure
+## Project Structure
 
 ```
 📁 /src
@@ -70,7 +70,7 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 
 ---
 
-## 🖼 Visual References & Design Inspiration
+## Visual References & Design Inspiration
 
 - http://everylastdrop.co.uk/
 - https://delassus.com/en/
@@ -83,7 +83,7 @@ The story unfolds as the user scrolls vertically through the journey of Keloglan
 
 ---
 
-## 👤 Author
+## Author
 
 **Eren Sahbaz**  
 Front-End Design Student @ Erasmushogeschool Brussel  
@@ -92,7 +92,7 @@ Languages: Dutch, Turkish, English
 
 ---
 
-## 🔖 License
+## License
 
 This project is for educational and non-commercial use. All visuals are either custom-made, used under free licenses, or adapted with attribution. Sources available upon request.
 
