@@ -15,29 +15,13 @@ export default function KeloText() {
 
 	useEffect(() => {
 		if (textRef.current) {
-			textRef.current.position.y = 8;
+			textRef.current.position.y = 8; // Initial position before animation
 			gsap.to(textRef.current.position, {
-				y: 0,
+				y: 0, // Target position
 				duration: 1.2,
 				ease: "power3.out",
 			});
 		}
-	}, []);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			if (textRef.current) {
-				const scrollY = window.scrollY;
-				const newY = Math.min(8, scrollY / 50);
-				gsap.to(textRef.current.position, {
-					y: newY,
-					duration: 0.5,
-					ease: "power3.out",
-				});
-			}
-		};
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	useFrame(() => {
@@ -60,7 +44,7 @@ export default function KeloText() {
 			bevelSize={0.02}
 			bevelOffset={0}
 			bevelSegments={1}
-			position={[0, 0, 0]}
+			position={[0, 0, 0]} // Centered by geometry.center()
 		>
 			Keloğlan
 			<meshStandardMaterial color="#ffffff" />

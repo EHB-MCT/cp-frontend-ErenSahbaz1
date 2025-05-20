@@ -3,15 +3,15 @@
 		"id": 1,
 		"name": "Eren",
 		"surname": "Sahbaz",
-		"fable_title": "Keloglan",
+		"fable_title": "Keloğlan",
 		"genre": "Adventure",
 		"cover": "/cover_eren.png",
 		"banner": "/banner_eren.png",
 		"description": "Keloglan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
 		"video_making_off": "https://www.youtube.com/embed/6dHyQSQ2YHM?si=2UaHCf11F7Ut39vV",
 		"extra_image1": "/extra_eren1.png",
-		"extra_image2": "/images/extra1b.jpg",
-		"extra_image3": "/images/extra1c.jpg"
+		"extra_image2": "/extra_eren2.png",
+		"extra_image3": "/extra_eren3.png"
 	},
 	{
 		"id": 2,

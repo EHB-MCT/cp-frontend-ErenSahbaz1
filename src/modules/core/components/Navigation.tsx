@@ -3,11 +3,7 @@ import { Search } from "~/core/components/Search";
 import { markers } from "../i18n/markers";
 import { t } from "i18next";
 import { Link } from "react-router";
-
-interface CourseProject {
-	fable_title: string;
-	genre: string;
-}
+import { CourseProject } from "~/shared/types/courseProject";
 
 interface NavigationProps {
 	courseProjects: CourseProject[];

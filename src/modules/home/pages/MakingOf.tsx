@@ -61,7 +61,7 @@ const MakingOf = () => {
 					</div>
 
 					{/* Gallery */}
-					<div className="mt-12">
+					<div className="mt-12 pb-7">
 						<h2 className="text-2xl font-bold mb-4">
 							See what the FairyTale looks like
 						</h2>
