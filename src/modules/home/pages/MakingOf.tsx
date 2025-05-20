@@ -14,7 +14,7 @@ const MakingOf = () => {
 			<div className="wrapper text-center py-10">
 				<p className="text-xl">Project not found</p>
 				<button
-					onClick={() => navigate("/")}
+					onClick={() => navigate("/cp-frontend-ErenSahbaz1/")}
 					className="mt-4 bg-zinc-700 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold"
 				>
 					Back to Home
@@ -27,7 +27,7 @@ const MakingOf = () => {
 		<>
 			<div className="wrapper">
 				<IoReturnUpBack
-					onClick={() => navigate("/")}
+					onClick={() => navigate("/cp-frontend-ErenSahbaz1/")}
 					className="cursor-pointer size-10 mt-8"
 				/>
 
@@ -45,7 +45,7 @@ const MakingOf = () => {
 					<div className="bg-black rounded-xl p-7 flex justify-center items-center h-[700px]">
 						<div className="w-full h-full overflow-hidden rounded-lg">
 							<img
-								src={project.banner}
+								src={`/cp-frontend-ErenSahbaz1/${project.banner}`}
 								alt={project.fable_title}
 								className="w-full h-full object-cover"
 							/>
@@ -69,7 +69,7 @@ const MakingOf = () => {
 							{project.extra_image1 && (
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
-										src={project.extra_image1}
+										src={`/cp-frontend-ErenSahbaz1/${project.extra_image1}`}
 										alt="Process 1"
 										className="w-full h-[400px] object-cover"
 									/>
@@ -78,7 +78,7 @@ const MakingOf = () => {
 							{project.extra_image2 && (
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
-										src={project.extra_image2}
+										src={`/cp-frontend-ErenSahbaz1/${project.extra_image2}`}
 										alt="Process 2"
 										className="w-full h-[400px] object-cover"
 									/>
@@ -87,7 +87,7 @@ const MakingOf = () => {
 							{project.extra_image3 && (
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
-										src={project.extra_image3}
+										src={`/cp-frontend-ErenSahbaz1/${project.extra_image3}`}
 										alt="Process 3"
 										className="w-full h-[400px] object-cover"
 									/>

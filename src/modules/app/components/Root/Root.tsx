@@ -9,12 +9,12 @@ const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/cp-frontend-ErenSahbaz1/",
 		element: <App />,
 		children: [
 			{ index: true, element: <Portal /> },
-			{ path: "parallax", element: <Parallax /> },
-			{ path: "making-of/:id", element: <MakingOf /> },
+			{ path: "/cp-frontend-ErenSahbaz1/parallax", element: <Parallax /> },
+			{ path: "/cp-frontend-ErenSahbaz1/making-of/:id", element: <MakingOf /> },
 		],
 	},
 ]);

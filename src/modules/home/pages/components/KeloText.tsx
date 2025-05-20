@@ -35,7 +35,7 @@ export default function KeloText() {
 	return (
 		<Text3D
 			ref={textRef}
-			font="/Inter_Bold.json"
+			font="/cp-frontend-ErenSahbaz1/InterBold.json" // Corrected path
 			size={1.5}
 			height={0.1}
 			curveSegments={15}

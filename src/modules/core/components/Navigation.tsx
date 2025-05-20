@@ -35,8 +35,8 @@ export const Navigation: React.FC<NavigationProps> = ({
 				<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			</div>
 			<div className="text-sm">
-				<Link to="/">{t(markers.explore)}</Link>
-				<Link to="/parallax" className="button-primary">
+				<Link to="/cp-frontend-ErenSahbaz1/">{t(markers.explore)}</Link>
+				<Link to="/cp-frontend-ErenSahbaz1/parallax" className="button-primary">
 					{t(markers.tale)}
 				</Link>
 			</div>

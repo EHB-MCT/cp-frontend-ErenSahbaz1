@@ -17,7 +17,7 @@ export const Card: React.FC<CardProps> = ({ data }) => {
 
 	// Function to handle card click
 	const handleCardClick = (projectId: number) => {
-		navigate(`/making-of/${projectId}`);
+		navigate(`/cp-frontend-ErenSahbaz1/making-of/${projectId}`); // ADD BASE URL HERE
 	};
 
 	return (
@@ -31,7 +31,7 @@ export const Card: React.FC<CardProps> = ({ data }) => {
 					<div>
 						<img
 							className="w-full rounded-2xl ease-in transition-transform hover:-translate-y-0.5 hover:shadow-lg"
-							src={project.cover}
+							src={`/cp-frontend-ErenSahbaz1/${project.cover}`}
 							alt={project.fable_title}
 						/>
 					</div>

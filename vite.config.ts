@@ -6,6 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
 	base: "/cp-frontend-ErenSahbaz1/",
-
 	plugins: [react(), tsconfigPaths(), tailwindcss()],
 });
