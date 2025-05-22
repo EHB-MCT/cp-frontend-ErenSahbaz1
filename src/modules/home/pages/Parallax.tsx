@@ -191,7 +191,9 @@ export const ParallaxPage = () => {
 					className="cloud absolute left-[82vw] top-[38vh] w-[24vw] opacity-100"
 				/>
 			</div>
-			<ScatterText />
+			<div className="relative top-[100vh] w-full">
+				<ScatterText />
+			</div>
 		</div>
 	);
 };

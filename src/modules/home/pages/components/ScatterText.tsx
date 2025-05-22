@@ -49,8 +49,13 @@ export default function ScatterText() {
 	}, []);
 
 	return (
-		<div className="container" ref={containerRef}>
-			<h1 className="h1">Move your pointer over the text to scatter.</h1>
+		<div
+			className="w-full h-screen flex items-center justify-center"
+			ref={containerRef}
+		>
+			<h1 className="h1 text-4xl md:text-6xl font-bold text-white text-center">
+				Keloglan left his house.
+			</h1>
 		</div>
 	);
 }
