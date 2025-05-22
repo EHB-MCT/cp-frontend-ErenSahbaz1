@@ -37,7 +37,8 @@ export const Card: React.FC<CardProps> = ({ data }) => {
 							}
 							alt={project.fairytale}
 							onError={(e) => {
-								(e.currentTarget as HTMLImageElement).src = "/placeholder.png";
+								(e.currentTarget as HTMLImageElement).src =
+									"/cp-frontend-ErenSahbaz1/placeholder.png";
 							}}
 						/>
 					</div>

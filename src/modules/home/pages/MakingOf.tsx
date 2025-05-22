@@ -2,6 +2,8 @@ import { useParams, useNavigate } from "react-router";
 import { IoReturnUpBack } from "react-icons/io5";
 import WavyTitle from "./components/WavyTitle";
 import courseProjects from "~/shared/mock/courseProjects.json";
+import YoutubeEmbed from "./components/YoutubeEmbed";
+import ScrollFloat from "./components/ScrollFloat";
 
 const MakingOf = () => {
 	const { id } = useParams();
@@ -50,9 +52,9 @@ const MakingOf = () => {
 
 					<div className="mt-10">
 						<p className="text-xs text-gray-500 mb-2">Description</p>
-						<p className="font-bold text-base leading-relaxed">
+						<ScrollFloat textClassName="font-bold text-xl leading-relaxed">
 							{project.description}
-						</p>
+						</ScrollFloat>
 					</div>
 
 					<div className="mt-12 pb-7">
@@ -85,6 +87,11 @@ const MakingOf = () => {
 										alt="Process 3"
 										className="w-full h-[400px] object-cover"
 									/>
+								</div>
+							)}
+							{project.videoExplainer && (
+								<div className="my-8">
+									<YoutubeEmbed embedId={project.videoExplainer} />
 								</div>
 							)}
 						</div>

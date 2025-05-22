@@ -1,2 +1,2 @@
-export { Parallax } from "./Parallax";
+export { ParallaxPage } from "./Parallax";
 export { default as MakingOf } from "./MakingOf";
