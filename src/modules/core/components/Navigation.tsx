@@ -21,7 +21,7 @@ export const Navigation: React.FC<NavigationProps> = ({
 
 		if (searchTerm) {
 			filtered = filtered.filter((project) =>
-				project.fable_title.toLowerCase().includes(searchTerm.toLowerCase())
+				project.fairytale.toLowerCase().includes(searchTerm.toLowerCase())
 			);
 		}
 

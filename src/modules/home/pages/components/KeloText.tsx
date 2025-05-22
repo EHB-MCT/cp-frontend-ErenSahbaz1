@@ -5,7 +5,11 @@ import gsap from "gsap";
 
 export default function KeloText() {
 	const textRef = useRef<any>(null);
-	const { mouse } = useThree();
+	const { mouse, camera } = useThree();
+
+	useEffect(() => {
+		camera.position.set(0, 0, 7);
+	}, [camera]);
 
 	useEffect(() => {
 		if (textRef.current && textRef.current.geometry) {
@@ -15,11 +19,14 @@ export default function KeloText() {
 
 	useEffect(() => {
 		if (textRef.current) {
-			textRef.current.position.y = 8; // Initial position before animation
+			textRef.current.position.y = 5;
+			textRef.current.position.z = 0;
+
 			gsap.to(textRef.current.position, {
-				y: 0, // Target position
-				duration: 1.2,
+				y: 0,
+				duration: 1.5,
 				ease: "power3.out",
+				delay: 0.3,
 			});
 		}
 	}, []);
@@ -35,8 +42,8 @@ export default function KeloText() {
 	return (
 		<Text3D
 			ref={textRef}
-			font="/cp-frontend-ErenSahbaz1/Inter_Bold.json" // Corrected path
-			size={1.5}
+			font="/cp-frontend-ErenSahbaz1/Inter_Bold.json"
+			size={1.2}
 			height={0.1}
 			curveSegments={15}
 			bevelEnabled
@@ -44,7 +51,6 @@ export default function KeloText() {
 			bevelSize={0.02}
 			bevelOffset={0}
 			bevelSegments={1}
-			position={[0, 0, 0]} // Centered by geometry.center()
 		>
 			Keloğlan
 			<meshStandardMaterial color="#ffffff" />

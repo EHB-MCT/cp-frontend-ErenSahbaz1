@@ -1,13 +1,8 @@
 import { useNavigate } from "react-router";
+import { CourseProject } from "~/shared/types/courseProject";
 
 interface CardProps {
-	data: Array<{
-		id: number;
-		cover: string;
-		fable_title: string;
-		name: string;
-		surname: string;
-	}>;
+	data: CourseProject[];
 }
 
 export const Card: React.FC<CardProps> = ({ data }) => {
@@ -15,30 +10,39 @@ export const Card: React.FC<CardProps> = ({ data }) => {
 
 	if (!data.length) return <div>No projects found.</div>;
 
-	// Function to handle card click
-	const handleCardClick = (projectId: number) => {
-		navigate(`/cp-frontend-ErenSahbaz1/making-of/${projectId}`); // ADD BASE URL HERE
+	const handleCardClick = (projectId: string) => {
+		navigate(`/cp-frontend-ErenSahbaz1/making-of/${projectId}`);
 	};
 
 	return (
-		<div className="flex flex-wrap gap-4 justify-evenly pb-15">
+		<div className="flex flex-wrap gap-10 justify-between pb-15">
 			{data.map((project) => (
 				<div
 					key={project.id}
-					className="card w-[30%] cursor-pointer "
+					className="card w-[30%] cursor-pointer"
 					onClick={() => handleCardClick(project.id)}
 				>
-					<div>
+					<div className="w-full aspect-[3/2] bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center">
 						<img
-							className="w-full rounded-2xl ease-in transition-transform hover:-translate-y-0.5 hover:shadow-lg"
-							src={`/cp-frontend-ErenSahbaz1/${project.cover}`}
-							alt={project.fable_title}
+							className="object-cover w-full h-full"
+							style={{
+								width: "1200px",
+								height: "800px",
+								maxWidth: "100%",
+								maxHeight: "100%",
+							}}
+							src={
+								project.imgThumbnail ||
+								"/cp-frontend-ErenSahbaz1/placeholder.png"
+							}
+							alt={project.fairytale}
+							onError={(e) => {
+								(e.currentTarget as HTMLImageElement).src = "/placeholder.png";
+							}}
 						/>
 					</div>
-					<h3 className="text-sm mt-2">{project.fable_title}</h3>
-					<p className="text-xs">
-						{project.name} {project.surname}
-					</p>
+					<h3 className="text-sm mt-2">{project.fairytale}</h3>
+					<p className="text-xs">{project.nameStudent}</p>
 				</div>
 			))}
 		</div>

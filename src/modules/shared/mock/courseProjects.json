@@ -1,58 +1,411 @@
 [
 	{
-		"id": 1,
-		"name": "Eren",
-		"surname": "Sahbaz",
-		"fable_title": "Keloğlan",
-		"genre": "Adventure",
-		"cover": "/cover_eren.png",
-		"banner": "/banner_eren.png",
-		"description": "Keloglan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
-		"video_making_off": "https://www.youtube.com/embed/6dHyQSQ2YHM?si=2UaHCf11F7Ut39vV",
-		"extra_image1": "/extra_eren1.png",
-		"extra_image2": "/extra_eren2.png",
-		"extra_image3": "/extra_eren3.png"
+		"id": "eren-sahbaz-keloglan",
+		"nameStudent": "Eren Sahbaz",
+		"fairytale": "Keloğlan",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
+		"description": "Keloğlan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/cover_eren.png",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/banner_eren.png",
+		"imgsExtra": [
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren1.png",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren2.png",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren3.png"
+		],
+		"genre": "avontuur",
+		"storyFrom": "andere sprookjes"
 	},
 	{
-		"id": 2,
-		"name": "Fleur",
-		"surname": "Van De Ville",
-		"fable_title": "The Wonderful Wizard of Oz",
-		"genre": "Animal",
-		"cover": "/placeholder.png",
-		"banner": "/Sneeuwwit.png",
-		"description": "Scroll through the enchanted forest where Snow White’s story unfolds in layers of depth and wonder. Watch the poison apple float gently towards you, while woodland creatures slide in from the sides. As you move through the page, the Evil Queen’s mirror whispers secrets, and dwarves pop up from behind trees with helpful tips about the world of front-end magic. With parallax scrolls and animated charm, this tale isn’t just told — it’s experienced.",
-		"video_making_off": "https://www.youtube.com/embed/6dHyQSQ2YHM?si=2UaHCf11F7Ut39vV",
-		"extra_image1": "https://res.cloudinary.com/dvybddjkk/image/upload/v1747756074/cover_sophia_uzq3bx.jpg",
-		"extra_image2": "/images/extra1b.jpg",
-		"extra_image3": "/images/extra1c.jpg"
+		"id": "jordi-de-leeuw-alice-in-wonderland",
+		"nameStudent": "Jordi De Leeuw",
+		"fairytale": "Alice in Wonderland",
+		"fairytaleLink": "",
+		"description": "Alice ziet een wit konijn voorbij rennen en besluit hem nieuwsgierig te volgen, recht de weide door. Zonder het te beseffen valt ze in een diepe put, en zo begint haar reis naar een wereld vol verwarring en verwondering. In een vreemde kamer vol deuren ontdekt ze magisch eten en drinken dat haar doet groeien en krimpen. Verderop belandt ze aan een chaotisch theefeest bij de Gekke Hoedenmaker, waar logica niet lijkt te bestaan. Maar de vrolijke waanzin slaat snel om, wanneer de dreiging van de Boze Koningin haar wereld binnendringt. Gelukkig was het allemaal maar een droom!",
+		"videoExplainer": "",
+		"imgThumbnail": "https://res.cloudinary.com/dici5riux/image/upload/promo_sesqtp",
+		"imgBanner": "https://res.cloudinary.com/dici5riux/image/upload/banner2_kz0wno",
+		"imgsExtra": [
+			"https://res.cloudinary.com/dici5riux/image/upload/square_twins_goaiux",
+			"https://res.cloudinary.com/dici5riux/image/upload/sqauremirror_bsdhd6",
+			"https://res.cloudinary.com/dici5riux/image/upload/squarepocketwatch_b8t8lz"
+		],
+		"genre": "avontuur",
+		"storyFrom": "andere sprookjes"
 	},
 	{
-		"id": 3,
-		"name": "Fleur",
-		"surname": "Van De Ville",
-		"fable_title": "ROODKAPJE",
-		"genre": "Animal",
-		"cover": "/placeholder.png",
-		"banner": "/Sneeuwwit.png",
-		"description": "Scroll through the enchanted forest where Snow White’s story unfolds in layers of depth and wonder. Watch the poison apple float gently towards you, while woodland creatures slide in from the sides. As you move through the page, the Evil Queen’s mirror whispers secrets, and dwarves pop up from behind trees with helpful tips about the world of front-end magic. With parallax scrolls and animated charm, this tale isn’t just told — it’s experienced.",
-		"video_making_off": "https://www.youtube.com/embed/6dHyQSQ2YHM?si=2UaHCf11F7Ut39vV",
-		"extra_image1": "/images/extra1a.jpg",
-		"extra_image2": "/images/extra1b.jpg",
-		"extra_image3": "/images/extra1c.jpg"
+		"id": "pema-bhutia-coraline",
+		"nameStudent": "Pema Bhutia",
+		"fairytale": "Coraline",
+		"fairytaleLink": "",
+		"description": "Coraline verhuist naar een nieuw appartement met haar drukke ouders maar voelt zich verwaarloosd en verveeld. Terwijl ze haar omgeving verkent, ontdekt ze een mysterieuze deur die naar een alternatieve versie van haar huis leidt. In deze Andere Wereld lijkt alles levendiger en ontmoet ze haar Andere Moeder, die knoopogen heeft en haar een schijnbaar perfect leven biedt. Coraline beseft echter al snel dat de Andere Moeder sinistere bedoelingen heeft en haar voor altijd gevangen wil houden. Coraline is vastbesloten om te ontsnappen een weg terug te vinden naar haar eigen wereld.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://res.cloudinary.com/ddyh6ryvx/image/upload/thumbnail_wlxraz",
+		"imgBanner": "https://res.cloudinary.com/ddyh6ryvx/image/upload/banner_mz2s61",
+		"imgsExtra": ["", "", ""],
+		"genre": "horror",
+		"storyFrom": "andere sprookjes"
 	},
 	{
-		"id": 4,
-		"name": "Fleur",
-		"surname": "Van De Ville",
-		"fable_title": "De koning en de witte slang",
-		"genre": "Animal",
-		"cover": "/placeholder.png",
-		"banner": "/Sneeuwwit.png",
-		"description": "Scroll through the enchanted forest where Snow White’s story unfolds in layers of depth and wonder. Watch the poison apple float gently towards you, while woodland creatures slide in from the sides. As you move through the page, the Evil Queen’s mirror whispers secrets, and dwarves pop up from behind trees with helpful tips about the world of front-end magic. With parallax scrolls and animated charm, this tale isn’t just told — it’s experienced.",
-		"video_making_off": "https://www.youtube.com/embed/6dHyQSQ2YHM?si=2UaHCf11F7Ut39vV",
-		"extra_image1": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/course-project/public/placeholder.png",
-		"extra_image2": "/images/extra1b.jpg",
-		"extra_image3": "/images/extra1c.jpg"
+		"id": "sophia-rahmoun-roodkapje",
+		"nameStudent": "Sophia Rahmoun",
+		"fairytale": "Roodkapje",
+		"fairytaleLink": "",
+		"description": "Roodkapje is een sprookje over een jong meisje dat een rode mantel draagt en onderweg naar haar wachtende grootmoeder een wolf tegenkomt. Afhankelijk van de versie van het verhaal wordt het meisje door de wolf opgegeten of gered door een boswachter of jager.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/assets/cover_sophia.jpg",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/assets/banner_sophia.jpg",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/assets/extra1_sophia.png",
+			"https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/assets/extra2_sophia.jpg",
+			"https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/assets/extra3_sophia.jpg"
+		],
+		"genre": "fantasie",
+		"storyFrom": "Gebroeders Grimm"
+	},
+	{
+		"id": "wout-van-impe-blauwbaard",
+		"nameStudent": "Wout Van Impe",
+		"fairytale": "Blauwbaard",
+		"fairytaleLink": "",
+		"description": "Blauwbaard is een duister sprookje vol mysterie en verboden geheimen. Het gaat over een rijk, maar zonderlinge edelman met een blauwe baard die al meerdere keren getrouwd is geweest, maar niemand weet wat er met zijn vorige vrouwen is gebeurd. Wanneer hij opnieuw trouwt, geeft hij zijn jonge bruid de sleutels van zijn kasteel, met één strikte regel: één kamertje mag ze nooit betreden. De verleiding blijkt te groot, en achter die verboden deur ontdekt ze een huiveringwekkend geheim… het lot van haar voorgangsters. Wanneer Blauwbaard haar daad ontdekt, dreigt ook zij zijn volgende slachtoffer te worden. Maar kan ze hem nog op tijd ontvluchten? ",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-WoutVanImpe/thumbnail.png",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-WoutVanImpe/banner.png",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-WoutVanImpe/extra1.png",
+			"https://ehb-mct.github.io/cp-frontend-WoutVanImpe/extra2.png",
+			"https://ehb-mct.github.io/cp-frontend-WoutVanImpe/extra3.png",
+			"https://ehb-mct.github.io/cp-frontend-WoutVanImpe/extra4.png"
+		],
+		"genre": "horror",
+		"storyFrom": "Charles Perrault"
+	},
+	{
+		"id": "sam-hoeterickx-de-wolf-en-de-3-biggetjes",
+		"nameStudent": "Sam Hoeterickx",
+		"fairytale": "De wolf en de 3 biggetjes",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/#/fairy-tale",
+		"description": "De Wolf en de Drie Biggetjes” is een klassiek sprookje dat draait om drie kleine biggen die elk een eigen huisje bouwen om zich te beschermen tegen een gevaarlijke wolf. De eerste big bouwt een huis van stro, de tweede een huis van hout, en de derde een stevig huis van bakstenen. Wanneer de grote boze wolf verschijnt, probeert hij de biggen op te eten. Hij blaast het stro- en houten huis omver zonder moeite, waardoor de eerste twee biggen moeten vluchten naar het stenen huis van hun broer. Maar hoe hard de wolf ook blaast, het stenen huis blijft stevig staan. Uiteindelijk geeft de wolf op of wordt hij op slinkse wijze verslagen (afhankelijk van de versie). Het verhaal eindigt met de overwinning van slimheid, voorbereiding en hard werken over luiheid en gemakzucht.<br><br>Voor dit studentenproject heb ik dit klassieke verhaal omgezet in een interactieve 3D-ervaring die rechtstreeks in de browser te beleven is. Met behulp van Three.js, React Three Fiber en React Three Drei kon ik de wereld van de drie biggetjes op een visueel aantrekkelijke manier tot leven brengen. Om de scènes extra dynamiek te geven, heb ik gebruikgemaakt van GSAP voor vloeiende animaties en overgangen. Het project was een leerzame uitdaging waarin ik storytelling, creatieve vormgeving en technische webontwikkeling heb gecombineerd om een meeslepende digitale vertelling te realiseren.",
+		"videoExplainer": "Ngv0FRC6gqc",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/tumbnail.png",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/Banner_image.png",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/extra_image_1.png",
+			"https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/extra_image_2.png",
+			"https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/images/fairytale/extra_image_3.png"
+		],
+		"genre": "avontuur",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "rayan-arssi-de-kleine-zeemeermin",
+		"nameStudent": "Rayan Arssi",
+		"fairytale": "De kleine zeemeermin",
+		"fairytaleLink": "",
+		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous  Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-rayanarssi/assets/thumbnail.png",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-rayanarssi/assets/Banner.png",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-rayanarssi/assets/Extra_image_1.jpg",
+			"https://ehb-mct.github.io/cp-frontend-rayanarssi/assets/Extra_image_2.jpg",
+			"https://ehb-mct.github.io/cp-frontend-rayanarssi/assets/Extra_image_3.jpg"
+		],
+		"genre": "fantasie",
+		"storyFrom": "H. C. Andersen"
+	},
+	{
+		"id": "manal-boulahya-the-tale-of-the-princes-kaguya",
+		"nameStudent": "Manal Boulahya",
+		"fairytale": "The Tale of The Princes Kaguya",
+		"fairytaleLink": "",
+		"description": "Het verhaal van Prinses Kaguya vertelt het verhaal van een klein meisje dat door een oude bamboesnijder in een gloeiende bamboestengel wordt ontdekt. Met liefde opgevoed, groeit ze uit tot een prachtige jonge vrouw. In de overtuiging dat ze een goddelijke prinses is, neemt haar adoptievader haar mee naar de hoofdstad om een nobel leven te leiden.<br><br>Ondanks rijkdom en hooggeplaatste aanbidders verlangt Kaguya terug naar haar eenvoudige jeugd op het platteland. Naarmate haar mysterieuze afkomst zich ontvouwt, moet ze haar ware identiteit en het verdriet onder ogen zien om terug te keren naar waar ze echt thuishoort.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://res.cloudinary.com/deq5iutqv/image/upload/v1747841386/cover_egxxh1.png",
+		"imgBanner": "",
+		"imgsExtra": ["", "", ""],
+		"genre": "fantasie",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "younes-ben-ali-aladin-en-de-wonderlamp",
+		"nameStudent": "Younes Ben Ali",
+		"fairytale": "Aladin en de wonderlamp",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/Parallax",
+		"description": "Step into the bustling streets of Agrabah where Aladdin's adventure shimmers to life in layers of magic and mystery. Watch the wonderlamp glint in the distance as golden sands swirl around you, while Genies and magic carpets drift through the skies. As you scroll, the Cave of Wonders roars open its mouth, and jewels sparkle with hidden secrets about the world of front-end enchantment. With parallax scrolls and animated wonder, this tale isn't just told — it's lived.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/Thumbnail.png",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/BannerAladdin.png",
+		"imgsExtra": ["", "", ""],
+		"genre": "fantasie",
+		"storyFrom": "Duizend-en-één-nacht"
+	},
+	{
+		"id": "arno-baeck-hans-en-grietje",
+		"nameStudent": "Arno Baeck",
+		"fairytale": "Hans en Grietje",
+		"fairytaleLink": "",
+		"description": "Step into the enchanted woods and discover the creative process behind my reimagining of the classic fairy tale, Hansel and Gretel. In this project, I brought the story to life with a personal twist—adding a magical atmosphere and subtle surprises that make the experience feel new, yet nostalgic.<br><br>Using layered parallax effects, the scenes come alive as you move, creating a sense of depth and immersion. Carefully chosen sound effects accompany the journey, enhancing each moment—from rustling leaves to the eerie silence of the candy-covered forest.<br><br>This page offers a behind-the-scenes look at how I transformed a timeless tale into an interactive visual story, blending storytelling, animation, and sound into one seamless experience.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ArnoBaeck/refs/heads/main/public/dummyData-Sprookjes/hans-en-grietje.png",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ArnoBaeck/refs/heads/main/public/dummyData-Sprookjes/hansel_and_gretel_banner.png",
+		"imgsExtra": [
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ArnoBaeck/refs/heads/main/public/extra_image01.png",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ArnoBaeck/refs/heads/main/public/extra_image02.png",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ArnoBaeck/refs/heads/main/public/extra_image03.png"
+		],
+		"genre": "avontuur",
+		"storyFrom": "Gebroeders Grimm"
+	},
+	{
+		"id": "rey-mammadbeyli-hercules",
+		"nameStudent": "Rey Mammadbeyli",
+		"fairytale": "Hercules",
+		"fairytaleLink": "",
+		"description": "Hercules vertelt het verhaal van een jonge god, Hercules, die door Hades, de god van de onderwereld, van de berg Olympus wordt ontvoerd en sterfelijk wordt. Hoewel hij op aarde opgroeit, behoudt Hercules zijn goddelijke kracht. Als tiener ontdekt hij zijn ware afkomst en zet hij zich in om een ware held te worden om zijn plaats onder de goden terug te winnen. Getraind door de satyr Philoctetes ('Phil') en vergezeld door zijn vliegende paard Pegasus, komt Hercules vele uitdagingen en monsters tegen die gestuurd zijn door Hades, die Zeus ten val wil brengen. Onderweg wordt Hercules verliefd op Megara, een cynische maar goedhartige vrouw die in het geheim voor Hades werkt. Uiteindelijk bewijst Hercules dat ware heldenmoed voortkomt uit zelfopoffering - niet uit kracht - wanneer hij zijn leven riskeert om Meg te redden. Zijn moed levert hem een ​​plek op Olympus op, maar hij kiest ervoor om bij Meg op aarde te blijven, nu hij gevonden heeft waar hij echt thuishoort.",
+		"videoExplainer": "",
+		"imgThumbnail": "",
+		"imgBanner": "",
+		"imgsExtra": ["", "", ""],
+		"genre": "mythologie",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "ramon-de-raes-de-wolf-en-de-3-biggetjes",
+		"nameStudent": "Ramon De Raes",
+		"fairytale": "De wolf en de 3 biggetjes",
+		"fairytaleLink": "",
+		"description": "Er waren eens drie biggetjes die op een dag besloten hun eigen huisjes te bouwen. Elk van hen koos een ander materiaal: stro, hout en steen. Ze wilden een veilig plekje om te wonen, ver weg van de gevaarlijke boze wolf die in het bos rondzwierf. Wat ze niet wisten, was dat hun keuzes hen al snel op de proef zouden stellen…",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-ramon337/tumbnail.png",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-ramon337/banner.png",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-ramon337/extra1.png",
+			"https://ehb-mct.github.io/cp-frontend-ramon337/extra1.png",
+			"https://ehb-mct.github.io/cp-frontend-ramon337/extra3.png"
+		],
+		"genre": "avontuur",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "laura-ocampo-peter-pan",
+		"nameStudent": "Laura Ocampo",
+		"fairytale": "Peter Pan",
+		"fairytaleLink": "",
+		"description": "Ga mee op een magische reis door Peter Pans betoverende wereld in deze meeslepende parallaxervaring. Van de kinderkamer van Darling tot het mysterieuze eiland Nooitgedachtland, waar bij elke scroll een avontuur wacht. Ontmoet de energieke Lost Boys, trotseer de dreigende piraten van Kapitein Haak aan boord van de Jolly Roger en volg Tinkerbells cursor en magische toverstaf door de bossen en kristalheldere lagunes. Vergeet niet je geluid aan te zetten voor de volledige betovering – de Lost Boys en Peter Pan wachten op je!",
+		"videoExplainer": "",
+		"imgThumbnail": "https://res.cloudinary.com/dyioqqptt/image/upload/v1747814791/Peter_Pan_gbid8m.jpg",
+		"imgBanner": "https://res.cloudinary.com/dyioqqptt/image/upload/v1747814930/Banner-peterpan_k3h1dn.png",
+		"imgsExtra": [
+			"https://res.cloudinary.com/dyioqqptt/image/upload/v1747815240/Gekidnapped_kqdjcr.png",
+			"https://res.cloudinary.com/dyioqqptt/image/upload/v1747815360/HaakVSPeterzonderZwaard_bepj6t.png",
+			"https://res.cloudinary.com/dyioqqptt/image/upload/v1747815375/Starwithstars_vgnpiu.png"
+		],
+		"genre": "fantasie",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "matteo-giambarresi-de-raaf-en-de-vos",
+		"nameStudent": "Matteo Giambarresi",
+		"fairytale": "De raaf en de vos",
+		"fairytaleLink": "",
+		"description": "De Raaf en de Vos is een dierenfabel geschreven door Jean de La Fontaine. In dit verhaal laat de schrijver dieren praten en handelen als mensen. Een ijdele raaf zit op een tak met een stuk kaas in zijn bek. Een sluwe vos wil de kaas en vleit de raaf door te zeggen hoe prachtig hij is en hoe mooi hij vast kan zingen. De raaf laat zich vangen door de vleierij, opent zijn snavel om te zingen, en laat zo de kaas vallen - precies wat de vos wilde.<br><br>De fabel eindigt met een duidelijke moraal: Wees op je hoede voor vleiers.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747820174/cover_raaf_en_de_vos_rzi5d6.png",
+		"imgBanner": "https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822114/banner_raaf_en_de_vos_ubkodp.png",
+		"imgsExtra": [
+			"https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822731/tree_dewmx9.png",
+			"https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822731/wolf_1_dsf1ox.png",
+			"https://res.cloudinary.com/dhvigmhgw/image/upload/v1747822731/bird_1_swxd7n.png"
+		],
+		"genre": "dierenverhaal",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "nordine-el-ouafrasi-belle-en-het-beest",
+		"nameStudent": "Nordine El Ouafrasi",
+		"fairytale": "Belle en het Beest",
+		"fairytaleLink": "",
+		"description": "N/A",
+		"videoExplainer": "",
+		"imgThumbnail": "",
+		"imgBanner": "",
+		"imgsExtra": ["", "", ""],
+		"genre": "romantiek",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "joel-lopez-mendez-raponsje",
+		"nameStudent": "Joel Lopez Mendez",
+		"fairytale": "Raponsje",
+		"fairytaleLink": "",
+		"description": "N/A",
+		"videoExplainer": "",
+		"imgThumbnail": "",
+		"imgBanner": "",
+		"imgsExtra": ["", "", ""],
+		"genre": "fantasie",
+		"storyFrom": "Gebroeders Grimm"
+	},
+	{
+		"id": "nina-breedstraet-de-waternimf-in-de-vijver",
+		"nameStudent": "Nina Breedstraet",
+		"fairytale": "De waternimf in de vijver",
+		"fairytaleLink": "",
+		"description": "De waternimf in de vijver is een mooi sprookje van de gebroeders Grimm. Het begint bij een arme molenaar die op een dag een magische nimf ziet glinsteren onder het wateroppervlak van zijn vijver. In ruil voor groot geluk belooft zij hem rijkdom… indien hij de eerstgeborene van zijn gezin aan haar afstaat. Jaren later, wanneer zijn zoon, die een jager is geworden, bij de vijver zijn handen wil wassen, grijpt de nimf hem mee de donkere diepte in. Radeloos zet zijn vrouw alles op alles om haar man te redden: ze doorstaat drie onmogelijke beproevingen waarbij een gouden kam, een betoverende fluit en een ingewikkeld spinnewiel de sleutel blijken. Maar hoe slaagt zij erin de nimf te slim af te zijn? En wat wacht hen na hun lange beproevingen? Ontdek het spannende einde van dit verhaal op mijn website…",
+		"videoExplainer": "oFN-mY7HMr8",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-NinaBreedstraet/refs/heads/main/deWaterNimfindeVijver/public/thumbnailNina.png?token=GHSAT0AAAAAADDOV2W6JOSL6Q7OFFWERP5C2BM6UAQ",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-NinaBreedstraet/refs/heads/main/deWaterNimfindeVijver/public/bannerNina.jpg?token=GHSAT0AAAAAADDOV2W6CXZ4FODN3IEZLPBU2BM6OWA",
+		"imgsExtra": [
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-NinaBreedstraet/refs/heads/main/deWaterNimfindeVijver/public/extraImage2Nina.png?token=GHSAT0AAAAAADDOV2W7SZIBL4JR33DDSM3M2BM6NUQ",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-NinaBreedstraet/refs/heads/main/deWaterNimfindeVijver/public/extraImage1Nina.png?token=GHSAT0AAAAAADDOV2W6ROY3NAV3SLDK3TUC2BM6NJA",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-NinaBreedstraet/refs/heads/main/deWaterNimfindeVijver/public/extaImage4Nina.jpg?token=GHSAT0AAAAAADDOV2W6B6K53CMZQCRABZQS2BM6PYA",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-NinaBreedstraet/refs/heads/main/deWaterNimfindeVijver/public/extraImage3Nina.png?token=GHSAT0AAAAAADDOV2W7SAIQELD6QH54O4D42BM6N5A"
+		],
+		"genre": "fantasie",
+		"storyFrom": "Gebroeders Grimm"
+	},
+	{
+		"id": "luca-lattuca-de-tovenaar-van-oz",
+		"nameStudent": "Luca Lattuca",
+		"fairytale": "De tovenaar van Oz",
+		"fairytaleLink": "",
+		"description": "De tovenaar van Oz vertelt het verhaal van Dorothy Gale, een jong meisje dat op een boerderij in Kansas woont en door een tornado wordt meegesleurd naar het magische land Oz. In Oz komen zij en haar hond Toto verschillende personages tegen, waaronder de Vogelverschrikker, de Blikken Houthakker en de Laffe Leeuw, die elk een wens van de Tovenaar van Oz willen. Dorothy en haar vrienden moeten over de Gele Bakstenen Weg naar de Smaragden Stad reizen om de Tovenaar van Oz te ontmoeten. Onderweg komen ze uitdagingen en gevaren tegen, waaronder de Boze Heks van het Westen, die vastbesloten is om Dorothy's robijnrode muiltjes te bemachtigen.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-LucaLattuca/thumbnail.jpg",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-LucaLattuca/banner.jpg",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-LucaLattuca/extra-1.png",
+			"https://ehb-mct.github.io/cp-frontend-LucaLattuca/extra-2.webp",
+			"https://ehb-mct.github.io/cp-frontend-LucaLattuca/extra-3.png"
+		],
+		"genre": "avontuur",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "fleur-van-de-ville-rapunzel",
+		"nameStudent": "Fleur Van De Ville",
+		"fairytale": "Rapunzel",
+		"fairytaleLink": "",
+		"description": "Rapunzel is een prinses met magisch, goud haar dat kan genezen. Als baby wordt ze ontvoerd door Moeder Gothel, die haar in een toren opsluit om jong te blijven. Op haar achttiende verjaardag wil Rapunzel de mysterieuze lichtjes zien die elk jaar in de lucht verschijnen. Wanneer de dief Flynn Rider haar toren binnenkomt, grijpt ze haar kans om de wereld buiten te ontdekken. Tijdens hun avontuur leert ze de waarheid over haar verleden en vindt ze haar echte familie terug.",
+		"videoExplainer": "So9o_CROe_Y",
+		"imgThumbnail": "https://res.cloudinary.com/drfkgbixt/image/upload/v1747767685/image_13445806_ntjxsn.jpg",
+		"imgBanner": "https://res.cloudinary.com/drfkgbixt/image/upload/v1747767674/8543_1920x1080_uwle22.jpg",
+		"imgsExtra": [
+			"https://res.cloudinary.com/drfkgbixt/image/upload/v1747767946/c089592821a61e9fbca23ed6fd91cd05_ld13rm.jpg",
+			"https://res.cloudinary.com/drfkgbixt/image/upload/v1747767973/Tower.01.PNG_ygeavg.webp",
+			"https://res.cloudinary.com/drfkgbixt/image/upload/v1747767961/rapuncel-hameleon-paskal-616_rugnn0.webp"
+		],
+		"genre": "avontuur",
+		"storyFrom": "Gebroeders Grimm"
+	},
+	{
+		"id": "beatrice-bjoko-de-vuurvogel-en-vasilisa-de-tsarendochter",
+		"nameStudent": "Beatrice Bjoko",
+		"fairytale": "De vuurvogel en Wasilisa, de tsarendochter",
+		"fairytaleLink": "",
+		"description": "De Vuurvogel is een betoverend sprookje over een magische, vurige vogel met gloeiende veren die in het donker schitteren. In het verhaal gaat een jonge held op zoek naar dit mythische wezen, dat vaak symbool staat voor hoop, vernieuwing of genezing. Onderweg komt hij voor moeilijke keuzes te staan, trotseert hij gevaar en leert hij belangrijke lessen over moed, liefde en opoffering. Het verhaal vindt zijn oorsprong in de Russische folklore en staat bekend om zijn mysterieuze, poëtische toon en rijke, wonderlijke beeldtaal.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-BeatriceBjoko/refs/heads/main/public/assets/thumbnail_devuurvogel.png",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-BeatriceBjoko/refs/heads/main/public/assets/vuurvogel-banner.png",
+		"imgsExtra": ["", "", ""],
+		"genre": "magie",
+		"storyFrom": "uit Rusland"
+	},
+	{
+		"id": "siriyakorn-klaklang-duimelijntje",
+		"nameStudent": "Siriyakorn Klaklang",
+		"fairytale": "Duimelijntje",
+		"fairytaleLink": "",
+		"description": "Duimelijntje, een piepklein meisje geboren uit een bloem, wordt ontvoerd door een pad die haar wil uithuwelijken aan haar lelijke zoon. Met hulp van vissen en een vlinder ontsnapt ze. Daarna wordt ze meegenomen door een kever, maar verstoten omdat ze geen voelsprieten heeft.<br>Ze overleeft de zomer in het bos, maar als de winter komt, vindt een veldmuis haar en biedt haar onderdak. De veldmuis wil haar uithuwelijken aan een blinde, sombere mol. In de ondergrondse gangen verzorgt Duimelijntje in het geheim een zieke zwaluw, die later ..",
+		"videoExplainer": "",
+		"imgThumbnail": "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747814740/Firefly_een_lelie_blad_20986_w6ujm5.jpg",
+		"imgBanner": "https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240114/cx25j1ytaeit1gu5aaa6.jpg",
+		"imgsExtra": [
+			"https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240116/jxxo1oxb987cizvgzma1.jpg",
+			"https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240114/uhudl2sx5mrki22slwo7.jpg",
+			"https://res.cloudinary.com/dpisu7cdm/image/upload/v1747240113/essikhz9cgr1szptectc.jpg"
+		],
+		"genre": "avontuur",
+		"storyFrom": "H. C. Andersen"
+	},
+	{
+		"id": "ernest-marot-na",
+		"nameStudent": "Ernest Marot",
+		"fairytale": "N/A",
+		"fairytaleLink": "",
+		"description": "N/A",
+		"videoExplainer": "",
+		"imgThumbnail": "",
+		"imgBanner": "",
+		"imgsExtra": ["", "", ""],
+		"genre": "fantasie",
+		"storyFrom": "andere sprookjes"
+	},
+	{
+		"id": "maxim-westerbeek-duimelijntje",
+		"nameStudent": "Maxim Westerbeek ",
+		"fairytale": "Duimelijntje",
+		"fairytaleLink": "",
+		"description": "Er was eens een klein meisje, niet groter dan een duim, dat uit een bloem werd geboren. Haar leven begon wondermooi, maar al gauw werd zij weggerukt door een lelijke pad die haar met zijn zoon wilde huwen. Zo begon voor Duimelijntje een lange reis vol gevaren en verdriet. Ze werd ontvoerd door een kever, leefde eenzaam in het bos, en moest schuilen voor de kou bij een veldmuis, die haar uithuwelijken wilde aan een rijke, maar saaie mol. Toch bleef haar hart verlangen naar licht, vrijheid en liefde. Dankzij een zwaluw die zij in de winter liefdevol verzorgde, nam die haar vóór het huwelijk mee. Vond zij uiteindelijk haar geluk in een warm land, waar zij trouwde met een prins van haar eigen grootte en naam kreeg als een de bloemenkoningin. En daar leefde zij gelukkig, in zon en bloemen, voor altijd.",
+		"videoExplainer": "-63Umofytqg",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/thumbnail_maxim-westerbeek.jpg",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/banner_maxim-westerbeek.jpg",
+		"imgsExtra": [
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/extra-img-1_maxim-westerbeek.jpg",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/extra-img-2_maxim-westerbeek.jpg",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/assets/extra-img-3_maxim-westerbeek.jpg"
+		],
+		"genre": "avontuur",
+		"storyFrom": "H. C. Andersen"
+	},
+	{
+		"id": "seppe-ghekiere-de-witte-slang",
+		"nameStudent": "Seppe Ghekiere",
+		"fairytale": "De witte slang",
+		"fairytaleLink": "",
+		"description": "De witte slang, die een diepgaande liefde heeft voor de koning, leeft samen met hem in vrede, zonder dat hij weet van haar ware aard. Echter, haar geheim wordt ontdekt door een boeddhistische monnik, meestal Fa Hai, die de vrouw als een gevaar beschouwt vanwege haar natuur als geest. Fa Hai probeert hun relatie te verstoren door de waarheid over haar identiteit te onthullen.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://ehb-mct.github.io/cp-frontend-SeppeGhekiere/thumbnail.png",
+		"imgBanner": "https://ehb-mct.github.io/cp-frontend-SeppeGhekiere/de_koning_en_de_witte_slang_banner",
+		"imgsExtra": [
+			"https://ehb-mct.github.io/cp-frontend-SeppeGhekiere/extra_image_1.png",
+			"https://ehb-mct.github.io/cp-frontend-SeppeGhekiere/extra_image_2.png",
+			"https://ehb-mct.github.io/cp-frontend-SeppeGhekiere/extra_image_3.png"
+		],
+		"genre": "fantasie",
+		"storyFrom": "Gebroeders Grimm"
+	},
+	{
+		"id": "staf-dierickx-aladin-en-de-wonderlamp",
+		"nameStudent": "Staf Dierickx",
+		"fairytale": "Aladin en de wonderlamp",
+		"fairytaleLink": "",
+		"description": "Een jonge avonturier die door een mysterieuze tovenaar wordt uitgestuurd om een magische lamp te vinden in een verborgen grot vol rijkdommen. Na het ontdekken van de lamp en het oproepen van een geest, begint zijn reis pas echt.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://media.githubusercontent.com/media/EHB-MCT/cp-frontend-StafDierickx/main/public/thumbnail.png",
+		"imgBanner": "https://media.githubusercontent.com/media/EHB-MCT/cp-frontend-StafDierickx/main/public/cover.png",
+		"imgsExtra": [
+			"https://media.githubusercontent.com/media/EHB-MCT/cp-frontend-StafDierickx/main/public/extra-img-1.png",
+			"",
+			""
+		],
+		"genre": "fantasie",
+		"storyFrom": "Duizend-en-één-nacht"
+	},
+
+	{
+		"id": "igor-lopes-oliveira-jaap-en-de-bonenstaak",
+		"nameStudent": "Igor Lopes Oliveira",
+		"fairytale": "Jaap en de bonenstaak",
+		"fairytaleLink": "",
+		"description": "Jaap woont samen met zijn moeder en hun enige koe. Op een dag ruilt hij de koe voor magische bonen. Zijn moeder is woedend en gooit de bonen uit het raam. 's Nachts groeit er een gigantische bonenstaak tot in de wolken. Jaap klimt omhoog en ontdekt een kasteel in de lucht, waar een reus woont samen met een kip die gouden eieren legt en een magische harp. Jaap steelt de schatten, vlucht terug naar beneden en hakt de bonenstaak om, waardoor de reus valt. Vanaf dan leven Jaap en zijn moeder in rijkdom en geluk.",
+		"videoExplainer": "",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-IgorLopesOliveira/refs/heads/main/cp-igor/public/images/thumbnail-jack.png",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-IgorLopesOliveira/refs/heads/main/cp-igor/public/images/banner-jack.png",
+		"imgsExtra": ["", "", ""],
+		"genre": "fantasie",
+		"storyFrom": "andere sprookjes"
 	}
 ]

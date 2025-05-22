@@ -27,7 +27,7 @@ export const Filter: React.FC<FilterProps> = ({
 	};
 
 	return (
-		<div className="my-10 bg-[#EBF5EC] flex items-center justify-center rounded-xl">
+		<div className="my-10 bg-zinc-100 flex items-center justify-center rounded-xl">
 			<FormControl className="w-[100px] bg-white" sx={{ marginY: "10px" }}>
 				<InputLabel id="genre-select-label">{t("genreLabel")}</InputLabel>
 				<Select

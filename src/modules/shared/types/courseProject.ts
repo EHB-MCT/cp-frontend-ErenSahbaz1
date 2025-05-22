@@ -1,14 +1,13 @@
 export interface CourseProject {
-	id: number;
-	name: string;
-	surname: string;
-	fable_title: string;
-	genre: string;
-	cover: string;
-	banner: string;
+	id: string;
+	nameStudent: string;
+	fairytale: string;
+	fairytaleLink: string;
 	description: string;
-	video_making_off: string;
-	extra_image1?: string;
-	extra_image2?: string;
-	extra_image3?: string;
+	videoExplainer: string;
+	imgThumbnail: string;
+	imgBanner: string;
+	imgsExtra: string[];
+	genre: string;
+	storyFrom: string;
 }
