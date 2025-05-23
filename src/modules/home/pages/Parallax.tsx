@@ -7,6 +7,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScatterText from "./components/ScatterText";
+import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +16,7 @@ export const ParallaxPage = () => {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const leftRef = useRef<HTMLImageElement>(null);
 	const rightRef = useRef<HTMLImageElement>(null);
+	const sunRef = useRef<HTMLImageElement>(null);
 
 	useEffect(() => {
 		if (!containerRef.current || !leftRef.current || !rightRef.current) return;
@@ -110,6 +112,72 @@ export const ParallaxPage = () => {
 				},
 			}
 		);
+		gsap.fromTo(
+			".sun",
+			{ x: 0 },
+			{
+				x: -500,
+
+				ease: "sine.inOut",
+				scrollTrigger: {
+					trigger: sunRef.current,
+					start: "top bottom",
+					end: "bottom top",
+					scrub: true,
+				},
+			}
+		);
+		gsap.fromTo(
+			".house",
+			{ y: 0 },
+			{
+				y: -300,
+				ease: "none",
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: "top bottom",
+					end: "bottom top",
+					scrub: true,
+				},
+			}
+		);
+		gsap.fromTo(
+			".hedgehog",
+			{ y: 0, x: 0 },
+			{
+				y: -600,
+				x: -10,
+				ease: "none",
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: "top bottom",
+					end: "bottom top",
+					scrub: true,
+				},
+			}
+		);
+		gsap.to(".hedgehog img", {
+			y: "+=12",
+			repeat: -1,
+			yoyo: true,
+			duration: 2.5,
+			ease: "sine.inOut",
+			delay: 0.3,
+		});
+		gsap.fromTo(
+			".foreground-sword",
+			{ y: 0 },
+			{
+				y: -250,
+				ease: "none",
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: "top bottom",
+					end: "bottom top",
+					scrub: true,
+				},
+			}
+		);
 	}, []);
 
 	return (
@@ -121,7 +189,6 @@ export const ParallaxPage = () => {
 				onClick={() => navigate("/")}
 				className="fixed top-8 left-8 text-white text-3xl cursor-pointer z-30"
 			/>
-
 			<div className="h-[100vh] flex items-center justify-center pointer-events-none z-20 relative">
 				<Canvas camera={{ position: [0, 0, 1], fov: 50 }}>
 					<ambientLight intensity={0.1} />
@@ -135,7 +202,6 @@ export const ParallaxPage = () => {
 					<Environment preset="sunset" />
 				</Canvas>
 			</div>
-
 			<img
 				ref={leftRef}
 				src="/cp-frontend-ErenSahbaz1/mountains.png"
@@ -148,7 +214,6 @@ export const ParallaxPage = () => {
 				alt="back mountains"
 				className="absolute top-[25vh] right-1 w-[45vw] opacity-75 z-0"
 			/>
-
 			<div className="absolute top-[100vh] right-30 w-full h-[40vh] pointer-events-none z-20">
 				<img
 					src="/cp-frontend-ErenSahbaz1/cloud1.png"
@@ -191,7 +256,49 @@ export const ParallaxPage = () => {
 					className="cloud absolute left-[82vw] top-[38vh] w-[24vw] opacity-100"
 				/>
 			</div>
-			<div className="relative top-[100vh] w-full">
+			<div className="sun absolute top-[105vh] right-[-5vw] z-30">
+				<motion.img
+					src="/cp-frontend-ErenSahbaz1/sun.png"
+					alt="sun"
+					ref={sunRef}
+					className=" max-w-[350px] select-none cursor-pointer"
+					draggable={false}
+					whileHover={{ rotate: 360 }}
+					whileTap={{ scale: 0.0005 }}
+					transition={{ duration: 3, ease: "linear", repeat: 0 }}
+				/>
+			</div>
+			<div className="absolute left-1/2 top-[80vh] -translate-x-1/2 z-0">
+				<img
+					src="/cp-frontend-ErenSahbaz1/trees.png"
+					alt="trees"
+					className="w-[120vw] max-w-[1700px]"
+					draggable={false}
+				/>
+			</div>
+
+			<div className="absolute left-1/2 top-[140vh]  -translate-x-1/2 z-10">
+				<img
+					src="/cp-frontend-ErenSahbaz1/house.png"
+					alt="house"
+					className="house max-w-[1300px]"
+				/>
+				<img
+					src="/cp-frontend-ErenSahbaz1/sword.png"
+					alt="sword"
+					className="foreground-sword absolute left-[20vw] bottom-[35vh] w-[16vw] max-w-[220px] z-40 pointer-events-none rotate-[-25deg]"
+				/>
+			</div>
+			<div className="hedgehog absolute left-1/2 top-[230vh] z-20 w-[8vw] max-w-[120px] -translate-x-1/2 pointer-events-none">
+				<img
+					src="/cp-frontend-ErenSahbaz1/hedgedog.png"
+					alt="hedgehog"
+					className="w-full"
+					draggable={false}
+				/>
+			</div>
+
+			<div className="relative top-[80vh] w-full z-50">
 				<ScatterText />
 			</div>
 		</div>
