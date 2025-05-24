@@ -18,6 +18,15 @@ const resources = {
 				dierenverhaal: "Animal Story",
 				romantiek: "Romance",
 			},
+			makingOf: {
+				back: "Back to Home",
+				projectNotFound: "Project not found",
+				posted: "Posted – 6 May 2025",
+				description: "Description",
+				seeMore: "See what the FairyTale looks like",
+				visitSite: "Visit Site",
+				process: "Process",
+			},
 		},
 	},
 	nl: {
@@ -36,9 +45,20 @@ const resources = {
 				dierenverhaal: "Dierenverhaal",
 				romantiek: "Romantiek",
 			},
+			makingOf: {
+				back: "Terug naar Home",
+				projectNotFound: "Project niet gevonden",
+				posted: "Geplaatst – 6 mei 2025",
+				description: "Beschrijving",
+				seeMore: "Bekijk hoe het sprookje eruitziet",
+				visitSite: "Bezoek Site",
+				process: "Proces",
+			},
 		},
 	},
 };
+
+// rest of the file remains the same
 
 const lng = "en";
 

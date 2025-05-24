@@ -4,6 +4,7 @@ import { markers } from "../i18n/markers";
 import { t } from "i18next";
 import { Link } from "react-router";
 import { CourseProject } from "~/shared/types/courseProject";
+import { useDebounce } from "react-use";
 
 interface NavigationProps {
 	courseProjects: CourseProject[];
@@ -15,18 +16,28 @@ export const Navigation: React.FC<NavigationProps> = ({
 	setFilteredProjects,
 }) => {
 	const [searchTerm, setSearchTerm] = useState("");
+	const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
 
+	useDebounce(
+		() => {
+			setDebouncedSearchTerm(searchTerm);
+		},
+		500,
+		[searchTerm]
+	);
 	useEffect(() => {
 		let filtered = courseProjects;
 
-		if (searchTerm) {
+		if (debouncedSearchTerm) {
 			filtered = filtered.filter((project) =>
-				project.fairytale.toLowerCase().includes(searchTerm.toLowerCase())
+				project.fairytale
+					.toLowerCase()
+					.includes(debouncedSearchTerm.toLowerCase())
 			);
 		}
 
 		setFilteredProjects(filtered);
-	}, [searchTerm, courseProjects, setFilteredProjects]);
+	}, [debouncedSearchTerm, courseProjects, setFilteredProjects]);
 
 	return (
 		<div className="flex items-center justify-between pt-6">

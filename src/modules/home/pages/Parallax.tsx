@@ -42,7 +42,7 @@ export const ParallaxPage = () => {
 						trigger: containerRef.current,
 						start: "top bottom",
 						end: "bottom top",
-						scrub: true,
+						scrub: 1,
 					},
 				}
 			);
@@ -117,13 +117,12 @@ export const ParallaxPage = () => {
 			{ x: 0 },
 			{
 				x: -500,
-
 				ease: "sine.inOut",
 				scrollTrigger: {
 					trigger: sunRef.current,
-					start: "top bottom",
+					start: "top+=15% bottom",
 					end: "bottom top",
-					scrub: true,
+					scrub: 1,
 				},
 			}
 		);
@@ -137,25 +136,26 @@ export const ParallaxPage = () => {
 					trigger: containerRef.current,
 					start: "top bottom",
 					end: "bottom top",
-					scrub: true,
+					scrub: 1,
 				},
 			}
 		);
 		gsap.fromTo(
 			".hedgehog",
-			{ y: 0, x: 0 },
+			{ y: 0, rotate: 0 },
 			{
-				y: -600,
-				x: -10,
+				y: 220,
+				rotate: 1080,
 				ease: "none",
 				scrollTrigger: {
 					trigger: containerRef.current,
 					start: "top bottom",
 					end: "bottom top",
-					scrub: true,
+					scrub: 1,
 				},
 			}
 		);
+
 		gsap.to(".hedgehog img", {
 			y: "+=12",
 			repeat: -1,
@@ -174,7 +174,7 @@ export const ParallaxPage = () => {
 					trigger: containerRef.current,
 					start: "top bottom",
 					end: "bottom top",
-					scrub: true,
+					scrub: 3,
 				},
 			}
 		);
@@ -289,7 +289,7 @@ export const ParallaxPage = () => {
 					className="foreground-sword absolute left-[20vw] bottom-[35vh] w-[16vw] max-w-[220px] z-40 pointer-events-none rotate-[-25deg]"
 				/>
 			</div>
-			<div className="hedgehog absolute left-1/2 top-[230vh] z-20 w-[8vw] max-w-[120px] -translate-x-1/2 pointer-events-none">
+			<div className="hedgehog absolute left-1/2 top-[180vh] z-20 w-[8vw] max-w-[120px] -translate-x-1/2 pointer-events-none">
 				<img
 					src="/cp-frontend-ErenSahbaz1/hedgedog.png"
 					alt="hedgehog"
