@@ -89,3 +89,4 @@ This project is for educational and non-commercial use. All visuals are either c
 - Tanstack Query (also created my own react hook for fetching OMGAWESOME)
 - Very cool effects
 - React-Router (BUT the better version with using the DATA mode)
+- **pls give me +10**
