@@ -8,6 +8,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScatterText from "./components/ScatterText";
 import { motion } from "framer-motion";
+import CloudLayer from "./components/CloudLayer";
+import { clouds } from "./components/CloudLayer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,53 +22,6 @@ export const ParallaxPage = () => {
 
 	useEffect(() => {
 		if (!containerRef.current || !leftRef.current || !rightRef.current) return;
-
-		const yMoves = [
-			-1750, -1900, -1800, -1880, -1650, -1970, -1860, -1720, -1920, -1890,
-		];
-
-		const xMoves = [-200, 20, -40, 25, -15, 40, 10, -25];
-
-		const clouds = gsap.utils.toArray<HTMLElement>(".cloud");
-
-		clouds.forEach((cloud, i) => {
-			// ScrollTrigger: y and x move together on scroll
-			gsap.fromTo(
-				cloud,
-				{ y: 0, x: 0 },
-				{
-					y: yMoves[i],
-					x: xMoves[i],
-					ease: "none",
-					scrollTrigger: {
-						trigger: containerRef.current,
-						start: "top bottom",
-						end: "bottom top",
-						scrub: 1,
-					},
-				}
-			);
-
-			// float animation x axis
-			gsap.to(cloud, {
-				x: "+=" + (Math.random() * 10 + 10) * (i % 2 ? 1 : -1),
-				repeat: -1,
-				yoyo: true,
-				duration: Math.random() * 2 + 2,
-				ease: "sine.inOut",
-				delay: Math.random() * 2,
-			});
-
-			//gentle breathing
-			gsap.to(cloud, {
-				scale: 1 + Math.random() * 0.06,
-				repeat: -1,
-				yoyo: true,
-				duration: Math.random() * 2 + 2,
-				ease: "sine.inOut",
-				delay: Math.random() * 2,
-			});
-		});
 
 		gsap.to(leftRef.current, {
 			y: "+=30",
@@ -178,6 +133,24 @@ export const ParallaxPage = () => {
 				},
 			}
 		);
+		const fogYs = [-120, -170, -140]; // pixels each fog image moves upward (adjust for taste)
+		gsap.utils.toArray<HTMLElement>(".fog-layer").forEach((fog, i) => {
+			gsap.fromTo(
+				fog,
+				{ y: 0, opacity: 1 },
+				{
+					y: fogYs[i],
+					opacity: 0.3 + 0.2 * (2 - i), // Each fog layer fades a little as it rises
+					ease: "none",
+					scrollTrigger: {
+						trigger: containerRef.current,
+						start: "top+=80vh bottom", // Start scroll when top of scene is at bottom of viewport
+						end: "top+=225vh top", // End scroll when top of scene is at top of viewport
+						scrub: 1,
+					},
+				}
+			);
+		});
 	}, []);
 
 	return (
@@ -214,48 +187,13 @@ export const ParallaxPage = () => {
 				alt="back mountains"
 				className="absolute top-[25vh] right-1 w-[45vw] opacity-75 z-0"
 			/>
-			<div className="absolute top-[100vh] right-30 w-full h-[40vh] pointer-events-none z-20">
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud1.png"
-					className="cloud absolute left-[15vw]  top-[45vh] w-[15vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud2.png"
-					className="cloud absolute left-[23vw] top-[43vh] w-[23vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud3.png"
-					className="cloud absolute left-[44vw] top-[45vh] w-[29vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud4.png"
-					className="cloud absolute left-[68vw] top-[38vh] w-[30vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud1.png"
-					className="cloud absolute left-[15vw] top-[46vh] w-[31vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud2.png"
-					className="cloud absolute left-[27vw] top-[48vh] w-[21vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud2.png"
-					className="cloud absolute left-[47vw] top-[48vh] w-[21vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud2.png"
-					className="cloud absolute left-[77vw] top-[48vh] w-[21vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud3.png"
-					className="cloud absolute left-[60vw] top-[40vh] w-[19vw] opacity-100"
-				/>
-				<img
-					src="/cp-frontend-ErenSahbaz1/cloud4.png"
-					className="cloud absolute left-[82vw] top-[38vh] w-[24vw] opacity-100"
-				/>
-			</div>
+			<CloudLayer
+				clouds={clouds}
+				top="100vh" // or wherever you want the cloud band to start
+				z={20} // optional: z-index, default is 20
+				containerRef={containerRef} // your main scroll container ref for parallax
+			/>
+
 			<div className="sun absolute top-[105vh] right-[-5vw] z-30">
 				<motion.img
 					src="/cp-frontend-ErenSahbaz1/sun.png"
@@ -300,6 +238,21 @@ export const ParallaxPage = () => {
 
 			<div className="relative top-[80vh] w-full z-50">
 				<ScatterText />
+			</div>
+			{/* --- Parallax Fog Transition --- */}
+			<div className="absolute left-0 top-[250vh] w-full h-[34vh] z-40 pointer-events-none fog-transition">
+				<img
+					src="/cp-frontend-ErenSahbaz1/fog.png"
+					className="fog-layer absolute left-[5vw]  top-[2vh] w-[60vw] opacity-100"
+				/>
+				<img
+					src="/cp-frontend-ErenSahbaz1/fog2.png"
+					className="fog-layer absolute left-[28vw] top-[10vh] w-[50vw] opacity-100"
+				/>
+				<img
+					src="/cp-frontend-ErenSahbaz1/fog3.png"
+					className="fog-layer absolute left-[55vw] top-[18vh] w-[45vw] opacity-100"
+				/>
 			</div>
 		</div>
 	);
