@@ -19,9 +19,15 @@ export const ParallaxPage = () => {
 	const leftRef = useRef<HTMLImageElement>(null);
 	const rightRef = useRef<HTMLImageElement>(null);
 	const sunRef = useRef<HTMLImageElement>(null);
-
+	const scene2Ref = useRef<HTMLDivElement>(null);
 	useEffect(() => {
-		if (!containerRef.current || !leftRef.current || !rightRef.current) return;
+		if (
+			!containerRef.current ||
+			!leftRef.current ||
+			!rightRef.current ||
+			!scene2Ref.current
+		)
+			return;
 
 		gsap.to(leftRef.current, {
 			y: "+=30",
@@ -133,24 +139,86 @@ export const ParallaxPage = () => {
 				},
 			}
 		);
-		const fogYs = [-120, -170, -140]; // pixels each fog image moves upward (adjust for taste)
+		const fogYs = [-120, -170, -140];
 		gsap.utils.toArray<HTMLElement>(".fog-layer").forEach((fog, i) => {
 			gsap.fromTo(
 				fog,
 				{ y: 0, opacity: 1 },
 				{
 					y: fogYs[i],
-					opacity: 0.3 + 0.2 * (2 - i), // Each fog layer fades a little as it rises
+					opacity: 0.3 + 0.2 * (2 - i),
 					ease: "none",
 					scrollTrigger: {
 						trigger: containerRef.current,
-						start: "top+=80vh bottom", // Start scroll when top of scene is at bottom of viewport
-						end: "top+=225vh top", // End scroll when top of scene is at top of viewport
+						start: "top+=80vh bottom",
+						end: "top+=225vh top",
 						scrub: 1,
 					},
 				}
 			);
 		});
+		gsap.fromTo(
+			'img[alt="river"]',
+			{ y: 0 },
+			{
+				y: -90,
+				ease: "none",
+				scrollTrigger: {
+					trigger: scene2Ref.current,
+					start: "top+=225vh bottom",
+					end: "top+=310vh top",
+					scrub: 1,
+				},
+			}
+		);
+
+		// Cave parallax (midground)
+		gsap.fromTo(
+			'img[alt="cave"]',
+			{ y: 0 },
+			{
+				y: -80,
+				ease: "none",
+				scrollTrigger: {
+					trigger: scene2Ref.current,
+					start: "top+=245vh bottom",
+					end: "top+=315vh top",
+					scrub: 1,
+				},
+			}
+		);
+
+		// Foreground tree
+		gsap.fromTo(
+			'img[alt="tree"]',
+			{ y: 0 },
+			{
+				y: -100,
+				ease: "none",
+				scrollTrigger: {
+					trigger: scene2Ref.current,
+					start: "top+=265vh bottom",
+					end: "top+=325vh top",
+					scrub: 1,
+				},
+			}
+		);
+
+		// Foreground rocks
+		gsap.fromTo(
+			'img[alt="rock"]',
+			{ y: 0 },
+			{
+				y: -320,
+				ease: "none",
+				scrollTrigger: {
+					trigger: scene2Ref.current,
+					start: "top+=270vh bottom",
+					end: "top+=335vh top",
+					scrub: 1,
+				},
+			}
+		);
 	}, []);
 
 	return (
@@ -189,9 +257,9 @@ export const ParallaxPage = () => {
 			/>
 			<CloudLayer
 				clouds={clouds}
-				top="100vh" // or wherever you want the cloud band to start
-				z={20} // optional: z-index, default is 20
-				containerRef={containerRef} // your main scroll container ref for parallax
+				top="100vh"
+				z={20}
+				containerRef={containerRef}
 			/>
 
 			<div className="sun absolute top-[105vh] right-[-5vw] z-30">
@@ -253,6 +321,53 @@ export const ParallaxPage = () => {
 					src="/cp-frontend-ErenSahbaz1/fog3.png"
 					className="fog-layer absolute left-[55vw] top-[18vh] w-[45vw] opacity-100"
 				/>
+			</div>
+
+			<div>
+				<div className="absolute left-100 top-[260vh] -translate-x-1/2 z-0 w-full flex justify-center pointer-events-none">
+					<img
+						src="/cp-frontend-ErenSahbaz1/river.png"
+						alt="river"
+						className="w-[120vw] max-w-[700px]"
+						draggable={false}
+					/>
+				</div>
+				<div className="absolute left-1/2 top-[248vh] -translate-x-1/2 z-10 pointer-events-none">
+					<img
+						src="/cp-frontend-ErenSahbaz1/cave.png"
+						alt="cave"
+						className=" max-w-[1000px]"
+						draggable={false}
+					/>
+				</div>
+				<div
+					ref={scene2Ref}
+					className="absolute left-110 top-[265vh] z-30 pointer-events-none"
+				>
+					<img
+						src="/cp-frontend-ErenSahbaz1/tree.png"
+						alt="tree"
+						className="w-[18vw] max-w-[300px]"
+						draggable={false}
+					/>
+				</div>
+
+				<div className="absolute left-[42vw] top-[303vh] z-30 pointer-events-none">
+					<img
+						src="/cp-frontend-ErenSahbaz1/rock1.png"
+						alt="rock"
+						className="w-[9vw] max-w-[120px]"
+						draggable={false}
+					/>
+				</div>
+				<div className="absolute left-[47vw] top-[303vh] z-30 pointer-events-none">
+					<img
+						src="/cp-frontend-ErenSahbaz1/rock2.png"
+						alt="rock"
+						className="w-[5vw] max-w-[170px]"
+						draggable={false}
+					/>
+				</div>
 			</div>
 		</div>
 	);
