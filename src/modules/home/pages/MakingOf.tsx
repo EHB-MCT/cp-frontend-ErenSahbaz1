@@ -9,9 +9,21 @@ import ScrollFloat from "./components/ScrollFloat";
 const MakingOf = () => {
 	const { id } = useParams();
 	const navigate = useNavigate();
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	const project = courseProjects.find((p) => p.id === id);
+
+	// Helper function to get translated description
+	const getTranslatedDescription = (projectId: string) => {
+		// Try to get translation
+		const translatedDesc = t(`descriptions.${projectId}`, {
+			defaultValue: "",
+		});
+
+		// If translation exists and is not empty, use it
+		// Otherwise fall back to the original description
+		return translatedDesc || project?.description;
+	};
 
 	if (!project) {
 		return (
@@ -57,7 +69,8 @@ const MakingOf = () => {
 							{t("makingOf.description")}
 						</p>
 						<ScrollFloat textClassName="font-bold text-base leading-relaxed">
-							{project.description}
+							{/* Use the translated description when available */}
+							{getTranslatedDescription(project.id)}
 						</ScrollFloat>
 					</div>
 
@@ -68,7 +81,7 @@ const MakingOf = () => {
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
 										src={project.imgsExtra[0]}
-										alt="Process 1"
+										alt={`${t("makingOf.process")} 1`}
 										className="w-full h-[400px] object-cover"
 									/>
 								</div>
@@ -77,7 +90,7 @@ const MakingOf = () => {
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
 										src={project.imgsExtra[1]}
-										alt="Process 2"
+										alt={`${t("makingOf.process")} 2`}
 										className="w-full h-[400px] object-cover"
 									/>
 								</div>
@@ -86,7 +99,7 @@ const MakingOf = () => {
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
 										src={project.imgsExtra[2]}
-										alt="Process 3"
+										alt={`${t("makingOf.process")} 3`}
 										className="w-full h-[400px] object-cover"
 									/>
 								</div>

@@ -16,4 +16,5 @@ export const markers = {
 		visitSite: "visitSite",
 		process: "process",
 	},
+	descriptions: "descriptions",
 };
