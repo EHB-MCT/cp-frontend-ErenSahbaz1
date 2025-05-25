@@ -59,6 +59,14 @@ Start the server
 
 [dev.to](https://dev.to/bravemaster619/simplest-way-to-embed-a-youtube-video-in-your-react-app-3bk2) To embed youtube videos in my makingOf page.
 
+[GSAP](https://gsap.com/docs/v3/) Most of my animations in my parallax page.
+
+[React Three Fiber](https://r3f.docs.pmnd.rs/getting-started/introduction?trk=public_post_comment-text) and [React Three Drei](https://drei.docs.pmnd.rs/getting-started/introduction) For my 3D models
+
+[React-Icons](https://react-icons.github.io/react-icons/) For some of the icons i used.
+
+[Motion](https://examples.motion.dev/react) For some of the text animation assets.
+
 ## Author
 
 [**Eren Sahbaz**](https://www.github.com/octokatherine)
