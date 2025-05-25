@@ -9,7 +9,7 @@ import ScrollFloat from "./components/ScrollFloat";
 const MakingOf = () => {
 	const { id } = useParams();
 	const navigate = useNavigate();
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	const project = courseProjects.find((p) => p.id === id);
 
