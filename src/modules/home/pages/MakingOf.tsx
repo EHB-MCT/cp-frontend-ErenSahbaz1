@@ -31,7 +31,7 @@ const MakingOf = () => {
 				<p className="text-xl">{t("makingOf.projectNotFound")}</p>
 				<button
 					onClick={() => navigate("/cp-frontend-ErenSahbaz1/")}
-					className="mt-4 bg-zinc-700 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold"
+					className="mt-4 bg-zinc-700 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold cursor-pointer"
 				>
 					{t("makingOf.back")}
 				</button>

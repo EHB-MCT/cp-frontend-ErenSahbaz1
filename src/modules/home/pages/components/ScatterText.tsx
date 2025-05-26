@@ -3,7 +3,15 @@ import { splitText } from "motion-plus";
 import { useMotionValue } from "motion/react";
 import { useEffect, useRef } from "react";
 
-export default function ScatterText() {
+interface ScatterTextProps {
+	text?: string;
+	className?: string;
+}
+
+export default function ScatterText({
+	text = "Hover over this text",
+	className = "text-4xl md:text-6xl font-bold text-white text-center",
+}: ScatterTextProps) {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const velocityX = useMotionValue(0);
 	const velocityY = useMotionValue(0);
@@ -46,16 +54,14 @@ export default function ScatterText() {
 		return () => {
 			document.removeEventListener("pointermove", handlePointerMove);
 		};
-	}, []);
+	}, [text]); // Re-run the effect when text changes
 
 	return (
 		<div
 			className="w-full h-screen flex items-center justify-center"
 			ref={containerRef}
 		>
-			<h1 className="h1 text-4xl md:text-6xl font-bold text-white text-center">
-				Keloglan left his house.
-			</h1>
+			<h1 className={`h1 ${className}`}>{text}</h1>
 		</div>
 	);
 }

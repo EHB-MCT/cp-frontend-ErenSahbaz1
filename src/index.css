@@ -9,6 +9,9 @@
 }
 
 @layer components {
+	a {
+		@apply ml-9;
+	}
 	.wrapper {
 		@apply h-[100vh] m-auto bg-white justify-center max-w-[90%];
 	}
@@ -44,4 +47,11 @@
 	height: 100%;
 	width: 100%;
 	position: absolute;
+}
+
+.custom-scroll-text {
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	z-index: 100;
 }
