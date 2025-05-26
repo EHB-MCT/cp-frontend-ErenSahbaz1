@@ -1,5 +1,25 @@
 [
 	{
+		"id": "eren-sahbaz-keloglan",
+		"nameStudent": "Eren Sahbaz",
+		"fairytale": "Keloğlan",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
+		"fairytaleAuthor": "Turkse en Altaïsche mythologie, sprookjes en soortgelijke volksverhalen.",
+		"parallaxInfo": "Vertical parallax, mouse parallax",
+		"description": "Keloğlan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
+		"videoExplainer": "UX-rZ-0uGVM",
+		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/cover_eren.png",
+		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/banner_eren.png",
+		"imgsExtra": [
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren1.png",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren2.png",
+			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren3.png"
+		],
+		"imgsInfo": "Low poly 3D models",
+		"genre": "avontuur",
+		"storyFrom": "andere sprookjes"
+	},
+	{
 		"id": "jordi-de-leeuw-alice-in-wonderland",
 		"nameStudent": "Jordi De Leeuw",
 		"fairytale": "Alice in Wonderland",
@@ -422,26 +442,7 @@
 		"genre": "fantasie",
 		"storyFrom": "Duizend-en-één-nacht"
 	},
-	{
-		"id": "eren-sahbaz-keloglan",
-		"nameStudent": "Eren Sahbaz",
-		"fairytale": "Keloğlan",
-		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
-		"fairytaleAuthor": "Turkse en Altaïsche mythologie, sprookjes en soortgelijke volksverhalen.",
-		"parallaxInfo": "Vertical parallax, mouse parallax",
-		"description": "Keloğlan, wat 'kale jongen' betekent, is een centrale figuur in vele Turkse volksverhalen. In één van deze verhalen besluit Keloglan, een arme maar moedige jongeman, om de man van een reuzin te worden. Hij verlaat zijn moeder en gaat op avontuur, waarbij hij uiteindelijk de reuzin verslaat met behulp van een egel en als held terugkeert naar huis.",
-		"videoExplainer": "UX-rZ-0uGVM",
-		"imgThumbnail": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/cover_eren.png",
-		"imgBanner": "https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/banner_eren.png",
-		"imgsExtra": [
-			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren1.png",
-			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren2.png",
-			"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-ErenSahbaz1/refs/heads/main/public/extra_eren3.png"
-		],
-		"imgsInfo": "Low poly 3D models",
-		"genre": "avontuur",
-		"storyFrom": "andere sprookjes"
-	},
+
 	{
 		"id": "igor-lopes-oliveira-jaap-en-de-bonenstaak",
 		"nameStudent": "Igor Lopes Oliveira",
