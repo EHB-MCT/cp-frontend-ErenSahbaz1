@@ -7,11 +7,11 @@ import YoutubeEmbed from "./components/YoutubeEmbed";
 import ScrollFloat from "./components/ScrollFloat";
 
 const MakingOf = () => {
-	const { id } = useParams();
-	const navigate = useNavigate();
-	const { t } = useTranslation();
+	const { id } = useParams(); // Get project ID from URL params
+	const navigate = useNavigate(); // Navigation hook
+	const { t } = useTranslation(); // Translation hook
 
-	const project = courseProjects.find((p) => p.id === id);
+	const project = courseProjects.find((p) => p.id === id); // Find the project by ID
 
 	// Helper function to get translated description
 	const getTranslatedDescription = (projectId: string) => {
@@ -25,6 +25,7 @@ const MakingOf = () => {
 		return translatedDesc || project?.description;
 	};
 
+	// If project is not found, show a not found message and back button
 	if (!project) {
 		return (
 			<div className="wrapper text-center py-10">
@@ -42,18 +43,21 @@ const MakingOf = () => {
 	return (
 		<>
 			<div className="wrapper">
+				{/* Back button (icon) */}
 				<IoReturnUpBack
 					onClick={() => navigate("/cp-frontend-ErenSahbaz1/")}
 					className="cursor-pointer size-10 mt-8"
 				/>
 
 				<div className="">
+					{/* Project title and student name */}
 					<div className="text-center mb-10">
 						<p className="text-xs text-gray-500">{t("makingOf.posted")}</p>
 						<WavyTitle>{project.fairytale}</WavyTitle>
 						<p className="mt-1 font-medium">{project.nameStudent}</p>
 					</div>
 
+					{/* Banner image */}
 					<div className="bg-black rounded-xl p-7 flex justify-center items-center h-[700px]">
 						<div className="w-full h-full overflow-hidden rounded-lg">
 							<img
@@ -64,6 +68,7 @@ const MakingOf = () => {
 						</div>
 					</div>
 
+					{/* Description section with floating animation */}
 					<div className="mt-10">
 						<p className="text-xs text-gray-500 mb-2">
 							{t("makingOf.description")}
@@ -74,9 +79,11 @@ const MakingOf = () => {
 						</ScrollFloat>
 					</div>
 
+					{/* Extra images and video */}
 					<div className="mt-12 pb-7">
 						<h2 className="text-2xl font-bold mb-4">{t("makingOf.seeMore")}</h2>
 						<div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+							{/* Render up to 3 extra images if available */}
 							{project.imgsExtra?.[0] && (
 								<div className="bg-black rounded-lg overflow-hidden">
 									<img
@@ -104,6 +111,7 @@ const MakingOf = () => {
 									/>
 								</div>
 							)}
+							{/* Render video if available */}
 							{project.videoExplainer && (
 								<div className="my-8">
 									<YoutubeEmbed embedId={project.videoExplainer} />
@@ -113,6 +121,7 @@ const MakingOf = () => {
 					</div>
 				</div>
 			</div>
+			{/* Button to visit the project website if available */}
 			{project.fairytaleLink && (
 				<a
 					href={project.fairytaleLink}
