@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import CloudLayer from "./components/CloudLayer";
 import { clouds } from "./components/CloudLayer";
 import FinalScene3D from "./components/FinalScene3D";
+import MusicPlayer from "./components/MusicPlayer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -339,8 +340,9 @@ export const ParallaxPage = () => {
 			{/* --- return button --- */}
 			<IoReturnUpBack
 				onClick={() => navigate("/")}
-				className="fixed top-8 left-8 text-white text-3xl cursor-pointer z-50"
+				className="fixed top-9 left-10  text-white text-3xl cursor-pointer z-50"
 			/>
+			<MusicPlayer />
 
 			{/* --- 3D text canvas --- */}
 			<div className="h-[100vh] flex items-center justify-center pointer-events-none z-20 relative">
