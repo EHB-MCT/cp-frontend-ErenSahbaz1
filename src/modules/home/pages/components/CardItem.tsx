@@ -25,15 +25,9 @@ export const CardItem: React.FC<CardItemProps> = ({ project }) => {
 			style={{ perspective: 1000 }} // Add perspective for 3D effect
 		>
 			{/* Image container with aspect ratio and rounded corners */}
-			<div className="w-full aspect-[3/2] bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center">
+			<div className="w-full aspect-[3/2] bg-gray-200 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
 				<img
-					className="object-cover w-full h-full"
-					style={{
-						width: "1200px",
-						height: "800px",
-						maxWidth: "100%",
-						maxHeight: "100%",
-					}}
+					className="object-cover w-[1200px] h-[800px] max-w-full max-h-full "
 					src={
 						project.imgThumbnail || "/cp-frontend-ErenSahbaz1/placeholder.png"
 					} // Use project image or fallback
