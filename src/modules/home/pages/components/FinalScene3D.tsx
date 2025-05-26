@@ -13,7 +13,7 @@ export default function FinalScene3D() {
 	return (
 		<>
 			{/* Absolute container positions the 3D scene deep in the scroll (at 500vh) */}
-			<div className="absolute left-1/2 top-[500vh] -translate-x-1/2 w-full h-[90vh] z-40 flex justify-center items-center">
+			<div className="absolute left-1/2 top-[520vh] -translate-x-1/2 w-full h-[90vh] z-40 flex justify-center items-center">
 				{/* Canvas sets up the 3D rendering context */}
 				<Canvas camera={{ position: [0, 2, 7], fov: 40 }}>
 					{/* Ambient light for general illumination */}

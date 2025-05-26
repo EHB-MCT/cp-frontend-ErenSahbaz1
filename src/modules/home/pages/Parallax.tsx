@@ -21,7 +21,7 @@ export const ParallaxPage = () => {
 	const rightRef = useRef<HTMLImageElement>(null);
 	const sunRef = useRef<HTMLImageElement>(null);
 	const scene2Ref = useRef<HTMLDivElement>(null);
-	const scene3Ref = useRef<HTMLDivElement>(null);
+	const scene3Ref = useRef<HTMLImageElement>(null);
 	const swordRef = useRef<HTMLImageElement>(null);
 	const textRef = useRef<HTMLDivElement>(null);
 
@@ -306,7 +306,7 @@ export const ParallaxPage = () => {
 		});
 		gsap.fromTo(
 			".win",
-			{ scale: 10 },
+			{ scale: 5 },
 			{
 				scale: 1,
 				scrollTrigger: {
@@ -334,7 +334,7 @@ export const ParallaxPage = () => {
 		//background
 		<div
 			ref={containerRef}
-			className="relative w-screen min-h-[600vh] bg-[#212121] overflow-hidden"
+			className="relative w-screen min-h-[610vh] bg-[#212121] overflow-hidden"
 		>
 			{/* --- return button --- */}
 			<IoReturnUpBack
@@ -515,7 +515,7 @@ export const ParallaxPage = () => {
 				alt=""
 				className="absolute left-1/2 top-[360vh] -translate-x-1/2 w-[120vw] max-w-[1800px] z-0 opacity-95 pointer-events-none"
 			/>
-			<div ref={scene3Ref} className="">
+			<div className="">
 				{/* --- aura effect --- */}
 				<motion.img
 					src="/cp-frontend-ErenSahbaz1/aura.png"
@@ -537,6 +537,7 @@ export const ParallaxPage = () => {
 					src="/cp-frontend-ErenSahbaz1/KeloChest.png"
 					alt="Keloglan"
 					className="keloglan absolute left-[22vw] top-[376vh] w-[37vw]  z-20 pointer-events-none"
+					ref={scene3Ref}
 				/>
 				{/* --- chest foreground --- */}
 				<img
@@ -546,8 +547,11 @@ export const ParallaxPage = () => {
 				/>
 			</div>
 			{/* --- Keloglan text --- */}
-			<div ref={textRef} className="">
-				<h1 className="win absolute z-50 top-[490vh] left-1/2 -translate-x-1/2 text-white text-[200px] text-nowrap font-black text-center">
+			<div className="">
+				<h1
+					className="win absolute z-50 top-[490vh] left-1/2 -translate-x-1/2 text-white text-[200px] text-nowrap font-black text-center"
+					ref={textRef}
+				>
 					Keloglan Wins!
 				</h1>
 			</div>
