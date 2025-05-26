@@ -70,10 +70,10 @@ const MakingOf = () => {
 
 					{/* Description section with floating animation */}
 					<div className="mt-10">
-						<p className="text-xs text-gray-500 mb-2">
+						<p className="text-xs text-gray-500 m-0">
 							{t("makingOf.description")}
 						</p>
-						<ScrollFloat textClassName="font-bold text-base leading-relaxed">
+						<ScrollFloat textClassName="font-bold text-lg leading-relaxed mt-2">
 							{/* Use the translated description when available */}
 							{getTranslatedDescription(project.id)}
 						</ScrollFloat>
