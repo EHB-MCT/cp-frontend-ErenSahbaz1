@@ -1,4 +1,10 @@
 import { CardItem } from "./CardItem";
+import { CourseProject } from "~/shared/types/courseProject";
+
+// Define CardProps type for the Card component
+interface CardProps {
+	data: CourseProject[];
+}
 
 // Card component displays a grid of project cards
 export const Card: React.FC<CardProps> = ({ data }) => {

@@ -154,7 +154,7 @@ export const ParallaxPage = () => {
 			}
 		);
 		//movement of fog
-		gsap.utils.toArray<HTMLElement>(".fog-layer").forEach((fog, i) => {
+		gsap.utils.toArray<HTMLElement>(".fog-layer").forEach((fog) => {
 			gsap.fromTo(
 				fog,
 				{ y: 0, opacity: 1, scale: 2.5 },
@@ -375,7 +375,7 @@ export const ParallaxPage = () => {
 				clouds={clouds}
 				top="100vh"
 				z={20}
-				containerRef={containerRef}
+				containerRef={containerRef as React.RefObject<HTMLDivElement>}
 			/>
 			{/* --- sun --- */}
 			<div className="sun absolute top-[105vh] right-[-5vw] z-30">
