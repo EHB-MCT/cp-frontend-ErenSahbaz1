@@ -9,7 +9,7 @@
 }
 
 @layer components {
-	a {
+	.navigation a {
 		@apply ml-9;
 	}
 	.wrapper {

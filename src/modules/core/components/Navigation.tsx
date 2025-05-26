@@ -52,7 +52,7 @@ export const Navigation: React.FC<NavigationProps> = ({
 				<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			</div>
 			{/* Navigation links */}
-			<div className="text-sm">
+			<div className="text-sm navigation">
 				<Link to="/cp-frontend-ErenSahbaz1/making-of/eren-sahbaz-keloglan">
 					Making Of
 				</Link>

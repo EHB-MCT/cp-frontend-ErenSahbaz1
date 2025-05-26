@@ -120,18 +120,19 @@ const MakingOf = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* Button to visit the project website if available */}
+				{project.fairytaleLink && (
+					<a
+						href={project.fairytaleLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-zinc-800 text-white px-8 py-3 rounded-xl shadow-lg text-base font-semibold hover:bg-zinc-700 transition"
+					>
+						{t("makingOf.visitSite")}
+					</a>
+				)}
 			</div>
-			{/* Button to visit the project website if available */}
-			{project.fairytaleLink && (
-				<a
-					href={project.fairytaleLink}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="fixed bottom-6 cursor-pointer left-1/2 -translate-x-1/2 z-50 bg-zinc-800 text-white px-8 py-3 rounded-xl shadow-lg text-base font-semibold hover:bg-zinc-700 transition"
-				>
-					{t("makingOf.visitSite")}
-				</a>
-			)}
 		</>
 	);
 };
