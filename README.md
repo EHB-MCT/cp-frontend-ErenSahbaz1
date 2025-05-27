@@ -69,7 +69,7 @@ Start the server
 
 ## Author
 
-[**Eren Sahbaz**](https://github.com/ErenSahbaz1)
+[**Eren Sahbaz**](https://github.com/ErenSahbaz)
 
 MCT Student @ Erasmushogeschool Brussel
 
